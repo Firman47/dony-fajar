@@ -16,7 +16,7 @@ module.exports = {
           800: "#718088",
           900: "#576168",
         },
-        "Dark-Blue": {
+        "dark-blue": {
           50: "#eaebf3",
           100: "#bdc1da",
           200: "#9da3c8",
