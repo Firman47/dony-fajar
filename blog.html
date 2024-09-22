@@ -6,16 +6,33 @@
     <title>Blog</title>
     <link rel="stylesheet" href="assets/css/tailwind.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      p {
+        @apply text-gray-600 text-sm sm:text-base;
+      }
+      h1 {
+        @apply text-[48px] font-semibold text-gray-900;
+      }
+      h2 {
+        @apply text-[36px] font-semibold text-gray-900;
+      }
+      h3 {
+        @apply text-[24px] font-semibold text-gray-900;
+      }
+      h4 {
+        @apply text-base font-semibold;
+      }
+    </style>
   </head>
   <body>
-    <header class="space-y-3">
+    <header class="space-y-3 hidden sm:block">
       <div
         class="bg-light-blue-500 flex gap-4 p-2 justify-center items-center relative"
       >
         <div class="flex items-center justify-center">
           <div class="w-4 h-4 bg-dark-blue-500 rounded-full"></div>
 
-          <h4 class="p-2">
+          <h4 class="p-2 font-semibold">
             Ikutan gamenya! biar dapet
             <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
           </h4>
@@ -54,7 +71,7 @@
         </a>
       </div>
 
-      <div class="flex items-center justify-between px-32">
+      <div class="flex items-center justify-between p-responsive">
         <div><img src="assets/img/logo.png" alt="" /></div>
         <nav class="text-gray-500 flex items-center justify-center gap-6">
           <a href="" class="nav-link-active">Beranda</a>
@@ -68,7 +85,54 @@
       </div>
     </header>
 
-    <div class="w-full px-32">
+    <header class="sm:hidden">
+      <div class="bg-light-blue-500 p-5 py-2">
+        <div class="flex flex-col justify-center pr gap-2">
+          <div class="flex justify-center items-center gap-2">
+            <div class="w-4 h-4 bg-dark-blue-500 rounded-full"></div>
+
+            <h4 class="text-sm font-semibold">
+              Ikutan gamenya! biar dapet
+              <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
+            </h4>
+          </div>
+
+          <a
+            href="#"
+            class="button-outline flex items-end justify-center gap-2 w-full"
+            >Main Sekarang!
+            <img src="assets/img/arrow-left.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between px-5 card">
+        <div><img src="assets/img/logo.png" alt="" class="w-[40px]" /></div>
+
+        <div class="flex gap-2 items-center justify-center">
+          <div class="space-y-1" id="btnNav">
+            <div class="h-1 w-6 bg-dark-blue-500"></div>
+            <div class="h-1 w-6 bg-dark-blue-500"></div>
+            <div class="h-1 w-6 bg-dark-blue-500"></div>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        id="nav-visible"
+        class="min-w-[250px] bg-white text-gray-500 flex-col items-center justify-center gap-4 card absolute top-[170px] right-[10px] hidden"
+      >
+        <a href="" class="button-outline">Dukungan</a>
+
+        <a href="" class="nav-link-active">Beranda</a>
+        <a href="">Prestasi</a>
+        <a href="">Visi & Misi</a>
+        <a href="">Biografi</a>
+        <a href="">Berita</a>
+      </nav>
+    </header>
+
+    <section class="w-full p-responsive">
       <!-- content header -->
       <div class="w-full py-10">
         <h1>Berita</h1>
@@ -484,14 +548,19 @@
         <!-- box kedua -->
       </div>
       <!-- contnt body -->
-    </div>
+    </section>
 
-    <footer class="px-32 py-4 space-y-3 bg-light-blue-100">
+    <footer class="p-responsive py-4 space-y-3 bg-light-blue-100">
       <div
-        class="flex justify-between items-center w-full border-b border-gray-500 p-6"
+        class="flex flex-col sm:flex-row gap-5 justify-center items-center w-full border-b border-gray-500 p-6"
       >
-        <div class="flex gap-3">
-          <div class="w-[99px] h-[99px] bg-dark-blue-500 rounded-full"></div>
+        <div
+          class="flex flex-col sm:flex-row gap-3 items-center justify-center text-center sm:text-start"
+        >
+          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
+            <img src="assets/img/pp-dony.png" alt="" />
+          </div>
+
           <div class="space-y-1">
             <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
 
@@ -499,7 +568,7 @@
               Dr. Dony Ahmad Munir, S.T., M.M.
             </p>
 
-            <div class="flex gap-2">
+            <div class="flex justify-center sm:justify-start gap-2">
               <a href="#">
                 <img src="assets/img/facebook.svg" alt="" />
               </a>
@@ -520,17 +589,25 @@
           </div>
         </div>
 
-        <div><img src="assets/img/logo.png" alt="" /></div>
+        <div class="min-w-[100px] flex justify-center">
+          <img src="assets/img/logo.png" alt="" />
+        </div>
 
-        <div class="flex gap-3">
-          <div class="space-y-1 text-end flex flex-col items-end">
+        <div
+          class="flex flex-col sm:flex-row-reverse gap-3 items-center justify-center text-center sm:text-end"
+        >
+          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
+            <img src="assets/img/pp-fajar.png" alt="" />
+          </div>
+
+          <div class="space-y-1">
             <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
 
             <p class="font-medium text-dark-blue-500 mb-2">
               Dr. Dony Ahmad Munir, S.T., M.M.
             </p>
 
-            <div class="flex gap-2">
+            <div class="flex justify-center sm:justify-end gap-2 min-w-full">
               <a href="#">
                 <img src="assets/img/facebook.svg" alt="" />
               </a>
@@ -549,12 +626,12 @@
               </a>
             </div>
           </div>
-
-          <div class="w-[99px] h-[99px] bg-dark-blue-500 rounded-full"></div>
         </div>
       </div>
 
       <p class="text-center text-black text-sm">©2024 DonyFajar</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

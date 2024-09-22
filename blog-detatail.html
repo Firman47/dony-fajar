@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header class="space-y-3">
+    <header class="space-y-3 hidden sm:block">
       <div
         class="bg-light-blue-500 flex gap-4 p-2 justify-center items-center relative"
       >
         <div class="flex items-center justify-center">
           <div class="w-4 h-4 bg-dark-blue-500 rounded-full"></div>
 
-          <h4 class="p-2">
+          <h4 class="p-2 font-semibold">
             Ikutan gamenya! biar dapet
             <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
           </h4>
@@ -54,7 +54,7 @@
         </a>
       </div>
 
-      <div class="flex items-center justify-between px-32">
+      <div class="flex items-center justify-between p-responsive">
         <div><img src="assets/img/logo.png" alt="" /></div>
         <nav class="text-gray-500 flex items-center justify-center gap-6">
           <a href="" class="nav-link-active">Beranda</a>
@@ -67,12 +67,271 @@
         <a href="" class="button-outline">Dukungan</a>
       </div>
     </header>
-    <footer class="px-32 py-4 space-y-3 bg-light-blue-100">
-      <div
-        class="flex justify-between items-center w-full border-b border-gray-500 p-6"
+
+    <header class="sm:hidden">
+      <div class="bg-light-blue-500 p-5 py-2">
+        <div class="flex flex-col justify-center pr gap-2">
+          <div class="flex justify-center items-center gap-2">
+            <div class="w-4 h-4 bg-dark-blue-500 rounded-full"></div>
+
+            <h4 class="text-sm font-semibold">
+              Ikutan gamenya! biar dapet
+              <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
+            </h4>
+          </div>
+
+          <a
+            href="#"
+            class="button-outline flex items-end justify-center gap-2 w-full"
+            >Main Sekarang!
+            <img src="assets/img/arrow-left.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-between px-5 card">
+        <div><img src="assets/img/logo.png" alt="" class="w-[40px]" /></div>
+
+        <div class="flex gap-2 items-center justify-center">
+          <div class="space-y-1" id="btnNav">
+            <div class="h-1 w-6 bg-dark-blue-500"></div>
+            <div class="h-1 w-6 bg-dark-blue-500"></div>
+            <div class="h-1 w-6 bg-dark-blue-500"></div>
+          </div>
+        </div>
+      </div>
+
+      <nav
+        id="nav-visible"
+        class="min-w-[250px] bg-white text-gray-500 flex-col items-center justify-center gap-4 card absolute top-[170px] right-[10px] hidden"
       >
-        <div class="flex gap-3">
-          <div class="w-[99px] h-[99px] bg-dark-blue-500 rounded-full"></div>
+        <a href="" class="button-outline">Dukungan</a>
+
+        <a href="" class="nav-link-active">Beranda</a>
+        <a href="">Prestasi</a>
+        <a href="">Visi & Misi</a>
+        <a href="">Biografi</a>
+        <a href="">Berita</a>
+      </nav>
+    </header>
+
+    <section
+      class="w-full px-32 flex flex-col items-center justify-center gap-12"
+    >
+      <div class="text-center py-10">
+        <h1 class="">Berita</h1>
+        <p class="text-base">
+          <span class="text-dark-blue-500 font-bold">Berana /Berita</span>
+          <span class="font-medium">
+            /Together for How You Can Make a Difference(Title)
+          </span>
+        </p>
+      </div>
+
+      <div class="max-w-[782px] space-y-6">
+        <div>
+          <h2>Together for How You Can Make a Difference(Title)</h2>
+          <p class="space-x-2">
+            <span class="label">Informasi</span> <span>19 Sep 24</span>
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="https://aie.edu.au/wp-content/uploads/2020/09/foundation-skills-for-work-feature.jpg"
+            alt="Image"
+            class="w-full"
+          />
+        </div>
+
+        <div class="space-y-12">
+          <p class="">
+            The shift towards integrating technology and innovative practices in
+            environmental protection is more than just a trend—it's a
+            transformative step in how conservation efforts are conducted and
+            experienced. This evolution promises more effective solutions,
+            broader accessibility, and enhanced outcomes, reshaping the way we
+            protect and sustain our planet. However, like any major shift, it
+            presents both exciting opportunities and essential challenges.
+          </p>
+
+          <div class="space-y-5">
+            <h3>Together for How You Can Make a Difference (Sub Title)</h3>
+            <p>
+              The shift towards integrating technology and innovative practices
+              in environmental protection is more than just a trend—it's a
+              transformative step in how conservation efforts are conducted and
+              experienced. This evolution promises more effective solutions,
+              broader accessibility, and enhanced outcomes, reshaping the way we
+              protect and sustain our planet. However, like any major shift, it
+              presents both exciting opportunities and essential challenges.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <h3>Together for How You Can Make a Difference (Sub Title)</h3>
+            <p>
+              The shift towards integrating technology and innovative practices
+              in environmental protection is more than just a trend—it's a
+              transformative step in how conservation efforts are conducted and
+              experienced. This evolution promises more effective solutions,
+              broader accessibility, and enhanced outcomes, reshaping the way we
+              protect and sustain our planet. However, like any major shift, it
+              presents both exciting opportunities and essential challenges.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="space-y-8 py-16">
+        <h2>Berita Lainnya</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="card rounded-lg flex gap-4 h-[220px]">
+            <div
+              class="aspect-square min-w-[180px] max-h-[180px] rounded overflow-hidden"
+            >
+              <img
+                src="https://aie.edu.au/wp-content/uploads/2020/09/foundation-skills-for-work-feature.jpg"
+                alt="Image"
+                class="object-cover h-full"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between">
+              <p class="space-x-2 mb-1">
+                <span class="label">Informasi</span> <span>19 Sep 24</span>
+              </p>
+
+              <h3 class="line-clamp-1">
+                Together for How You Can Make a Difference
+              </h3>
+
+              <p class="line-clamp-4">
+                The shift towards integrating technology and innovative
+                practices in environmental protection is more than just a
+                trend—it's a transformative step in how conservation efforts are
+                conducted and experienced. This evolution promises more
+                effective solutions, broader accessibility, and enhanced
+                outcomes, reshaping the way we protect and sustain our planet.
+                However, like any major shift, it presents both exciting
+                opportunities and essential challenges.
+              </p>
+            </div>
+          </div>
+
+          <div class="card rounded-lg flex gap-4 h-[220px]">
+            <div
+              class="aspect-square min-w-[180px] max-h-[180px] rounded overflow-hidden"
+            >
+              <img
+                src="https://aie.edu.au/wp-content/uploads/2020/09/foundation-skills-for-work-feature.jpg"
+                alt="Image"
+                class="object-cover h-full"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between">
+              <p class="space-x-2 mb-1">
+                <span class="label">Informasi</span> <span>19 Sep 24</span>
+              </p>
+
+              <h3 class="line-clamp-1">
+                Together for How You Can Make a Difference
+              </h3>
+
+              <p class="line-clamp-4">
+                The shift towards integrating technology and innovative
+                practices in environmental protection is more than just a
+                trend—it's a transformative step in how conservation efforts are
+                conducted and experienced. This evolution promises more
+                effective solutions, broader accessibility, and enhanced
+                outcomes, reshaping the way we protect and sustain our planet.
+                However, like any major shift, it presents both exciting
+                opportunities and essential challenges.
+              </p>
+            </div>
+          </div>
+
+          <div class="card rounded-lg flex gap-4 h-[220px]">
+            <div
+              class="aspect-square min-w-[180px] max-h-[180px] rounded overflow-hidden"
+            >
+              <img
+                src="https://aie.edu.au/wp-content/uploads/2020/09/foundation-skills-for-work-feature.jpg"
+                alt="Image"
+                class="object-cover h-full"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between">
+              <p class="space-x-2 mb-1">
+                <span class="label">Informasi</span> <span>19 Sep 24</span>
+              </p>
+
+              <h3 class="line-clamp-1">
+                Together for How You Can Make a Difference
+              </h3>
+
+              <p class="line-clamp-4">
+                The shift towards integrating technology and innovative
+                practices in environmental protection is more than just a
+                trend—it's a transformative step in how conservation efforts are
+                conducted and experienced. This evolution promises more
+                effective solutions, broader accessibility, and enhanced
+                outcomes, reshaping the way we protect and sustain our planet.
+                However, like any major shift, it presents both exciting
+                opportunities and essential challenges.
+              </p>
+            </div>
+          </div>
+
+          <div class="card rounded-lg flex gap-4 h-[220px]">
+            <div
+              class="aspect-square min-w-[180px] max-h-[180px] rounded overflow-hidden"
+            >
+              <img
+                src="https://aie.edu.au/wp-content/uploads/2020/09/foundation-skills-for-work-feature.jpg"
+                alt="Image"
+                class="object-cover h-full"
+              />
+            </div>
+
+            <div class="flex flex-col justify-between">
+              <p class="space-x-2 mb-1">
+                <span class="label">Informasi</span> <span>19 Sep 24</span>
+              </p>
+
+              <h3 class="line-clamp-1">
+                Together for How You Can Make a Difference
+              </h3>
+
+              <p class="line-clamp-4">
+                The shift towards integrating technology and innovative
+                practices in environmental protection is more than just a
+                trend—it's a transformative step in how conservation efforts are
+                conducted and experienced. This evolution promises more
+                effective solutions, broader accessibility, and enhanced
+                outcomes, reshaping the way we protect and sustain our planet.
+                However, like any major shift, it presents both exciting
+                opportunities and essential challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="p-responsive py-4 space-y-3 bg-light-blue-100">
+      <div
+        class="flex flex-col sm:flex-row gap-5 justify-center items-center w-full border-b border-gray-500 p-6"
+      >
+        <div
+          class="flex flex-col sm:flex-row gap-3 items-center justify-center text-center sm:text-start"
+        >
+          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
+            <img src="assets/img/pp-dony.png" alt="" />
+          </div>
+
           <div class="space-y-1">
             <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
 
@@ -80,7 +339,7 @@
               Dr. Dony Ahmad Munir, S.T., M.M.
             </p>
 
-            <div class="flex gap-2">
+            <div class="flex justify-center sm:justify-start gap-2">
               <a href="#">
                 <img src="assets/img/facebook.svg" alt="" />
               </a>
@@ -101,17 +360,25 @@
           </div>
         </div>
 
-        <div><img src="assets/img/logo.png" alt="" /></div>
+        <div class="min-w-[100px] flex justify-center">
+          <img src="assets/img/logo.png" alt="" />
+        </div>
 
-        <div class="flex gap-3">
-          <div class="space-y-1 text-end flex flex-col items-end">
+        <div
+          class="flex flex-col sm:flex-row-reverse gap-3 items-center justify-center text-center sm:text-end"
+        >
+          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
+            <img src="assets/img/pp-fajar.png" alt="" />
+          </div>
+
+          <div class="space-y-1">
             <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
 
             <p class="font-medium text-dark-blue-500 mb-2">
               Dr. Dony Ahmad Munir, S.T., M.M.
             </p>
 
-            <div class="flex gap-2">
+            <div class="flex justify-center sm:justify-end gap-2 min-w-full">
               <a href="#">
                 <img src="assets/img/facebook.svg" alt="" />
               </a>
@@ -130,12 +397,12 @@
               </a>
             </div>
           </div>
-
-          <div class="w-[99px] h-[99px] bg-dark-blue-500 rounded-full"></div>
         </div>
       </div>
 
       <p class="text-center text-black text-sm">©2024 DonyFajar</p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
