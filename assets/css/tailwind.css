@@ -68,7 +68,8 @@
   }
 
   .card-large {
-    @apply bg-white flex flex-col justify-start items-start gap-2 flex-1 p-10 rounded-2xl w-fit h-fit;
+    @apply bg-white flex flex-col justify-start items-start gap-2 flex-1 p-10 rounded-2xl w-fit h-fit;  box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.06);
+    border: 1px solid #f3f4f6;
   }
 
   /* Hidden Scroll */

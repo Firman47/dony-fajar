@@ -20,7 +20,7 @@
 </head>
 
 <body>
-  <nav class="fixed top-0 z-20 w-screen bg-white sh-4 flex flex-col" id="nav">
+  <nav class="fixed top-0 z-50 w-screen bg-white sh-4 flex flex-col" id="nav">
     <div id="banner" class="bg-light-blue-500 flex p-2 justify-center items-center relative">
       <div class="flex flex-col md:flex-row items-center justify-cente gap-2">
         <div class="flex  justify-center items-center gap-1">
@@ -97,7 +97,8 @@
   <main class="pt-0 xl:pt-12">
     <!-- Hero -->
   </main>
-  <section id="hero" class="w-full  px-4 md:px-16 xl:px-32 mt-24 ">
+  <section id="hero"
+    class="w-full px-4 md:px-16 xl:px-32 pt-16 bg-dark-blue-500 h-dvh flex items-center justify-center ">
     <div class="isolate">
       <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
         <svg
@@ -114,29 +115,33 @@
           </defs>
         </svg>
       </div>
-
-      <div class="relative pt-24 ">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl text-center">
-            <span class="text-base font-medium text-dark-blue-500">Calon Bupati Sumedang 2025-2030</span>
-            <h1 class="text-4xl font-bold text-primary-800 sm:text-6xl mt-3 text-dark-blue-500">Dony Fajar</h1>
-            <p class="mt-6 text-2xl  text-gray-600">Lanjutkan Sumedang Lebih Maju</p>
-
-          </div>
-          <div class="flex items-center justify-center"> <img src="assets/img/hero.png" alt="" srcset="">
-          </div>
-        </div>
-      </div>
     </div>
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center -mt-44  z-10">
+      <p class="text-white text-lg lg:text-2xl mb-4">
+        Calon Bupati & Wakil Bupati Sumedang 2025-2030
+      </p>
+      <h1 class="text-white text-6xl sm:text-[10vw] font-extrabold uppercase ">DONY FAJAR</h1>
+
+    </div>
+
+
+    <div class="absolute bottom-0 w-full z-20 flex justify-center overflow-clip -mb-12">
+      <img src="assets/img/hero.png" alt="hero" class="max-w-screen-sm 2xl:max-w-screen-lg object-cover">
+    </div>
+
   </section>
   <section id="visi-misi" class="px-4 md:px-16 xl:px-32 bg-light-blue-500 min-h-dvh">
-    <div class="mx-auto py-28">
+    <div class="mx-auto py-20">
       <div class="flex flex-row items-start gap-12">
-        <img src="assets/img/hero.png" alt="" class="w-1/2 hidden xl:block sticky top-0 pt-24">
-        <div class="flex flex-col w-full xl:w-1/2 gap-24 2xl:gap-28 2xl:w-2/5 xl:pt-80 pb-32">
+        <div class="w-1/2 hidden xl:flex sticky top-0 pt-[15%] xl:flex-col xl:items-center mt-2 ">
+          <img src="assets/img/hero.png" alt="">
+          <h2 class=" text-4xl font-semibold text-dark-blue-900 mt-3">Visi</h2>
+
+        </div>
+
+        <div class="flex flex-col w-full xl:w-1/2 gap-8 2xl:gap-20 2xl:w-2/5 xl:pt-80 pb-32">
           <div id="card-1" class="card-large opacity-100 transition-opacity">
-            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
-            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">1. MAJU</h4>
+            <h4 class="text-2xl font-semibold text-dark-blue-900">1. MAJU</h4>
             <h6 class="text-base text-wrap text-gray-600">
               MAJU bermakna tahun 2045 memiliki sumber daya manusia yang berdaya, tangguh, inovatif, memiliki kompetensi
               dan daya saing pada skala regional, nasional dan global, didukung kapasitas penguasaan ilmu pengatahuan
@@ -144,24 +149,21 @@
             </h6>
           </div>
           <div id="card-2" class="card-large opacity-50 transition-opacity">
-            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
-            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">2. AGAMIS</h4>
+            <h4 class="text-2xl font-semibold text-dark-blue-900">2. AGAMIS</h4>
             <h6 class="text-base text-wrap text-gray-600">
               AGAMIS bermakna tahun 2045 ditandai dengan kondisi lingkungan kehidupan sosial yang makin dijiwai oleh
               keimanan dan ketakwaan terhadap Tuhan Yang Maha Kuasa sesuai keyakinan masyarakat.
             </h6>
           </div>
           <div id="card-3" class="card-large opacity-50 transition-opacity">
-            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
-            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">3. MANDIRI</h4>
+            <h4 class="text-2xl font-semibold text-dark-blue-900">3. MANDIRI</h4>
             <h6 class="text-base text-wrap text-gray-600">
               MANDIRI merupakan wujud Kabupaten Sumedang pada tahun 2045 yang mampu memanfaatkan potensi sumber daya
               manusia, sumber daya alam, dan sumber daya lainnya secara optimal.
             </h6>
           </div>
           <div id="card-4" class="card-large opacity-50 transition-opacity">
-            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
-            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">4. ADIL</h4>
+            <h4 class="text-2xl font-semibold text-dark-blue-900">4. ADIL</h4>
             <h6 class="text-base text-wrap text-gray-600">
               ADIL bermakna memastikan bahwa pembangunan harus merata, seimbang dan berkeadilan antara penguatan dan
               pembanguan sumber daya manusia dengan pembangunan ekonomi dan pemerataan infrastruktur dan fasilitas
@@ -169,8 +171,7 @@
             </h6>
           </div>
           <div id="card-5" class="card-large opacity-50 transition-opacity">
-            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
-            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">5. BERKELANJUTAN</h4>
+            <h4 class="text-2xl font-semibold text-dark-blue-900">5. BERKELANJUTAN</h4>
             <h6 class="text-base text-wrap text-gray-600">
               BERKELANJUTAN memiliki arti menjamin kelestarian sumber daya alam dan kualitas lingkungan hidup dengan
               tata kelola yang baik dalam jangka panjang. Keberlanjutan sumber daya alam dan lingkungan hidup bertujuan
@@ -187,8 +188,8 @@
       <h2 class="text-4xl font-medium text-dark-blue-900">Misi</h2>
       <p class="text-xl text-gray-700 mt-1">Berikut Misi Dony & Fajar</p>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-12">
-      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-12 ">
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl col-span-2">
         <h2 class="text-2xl text-dark-blue-900 ">01</h2>
         <p class="text-base text-gray-600 mt-8">Mewujudkan nilai-nilai religius, taat hukum dan demokratis untuk
           menciptakan
@@ -207,7 +208,7 @@
           wilayah dan pembangunan kawasan industri guna meningkatkan pertumbuhan ekonomi.</p>
       </div>
 
-      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+      <div class="col-span-2 flex flex-col bg-light-blue-500 p-6 rounded-xl">
         <h2 class="text-2xl text-dark-blue-900">04</h2>
         <p class="text-base text-gray-600 mt-8">
           Memperluas kesempatan kerja dan penambahan keterampilan bagi
@@ -224,7 +225,7 @@
           sebagai wujud implementasi reforma agraria.
         </p>
       </div>
-      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+      <div class=" flex flex-col bg-light-blue-500 p-6 rounded-xl">
         <h2 class="text-2xl text-dark-blue-900">06</h2>
         <p class="text-base text-gray-600 mt-8">
           Mempercepat pembangunan sektor industri dan perdagangan guna
@@ -242,7 +243,7 @@
           serta apresiasi yang berprestasi.
         </p>
       </div>
-      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl col-span-2">
         <h2 class="text-2xl text-dark-blue-900">08</h2>
         <p class="text-base text-gray-600 mt-8">
           Meningkatkan efektivitas program inklusif pemberdayaan perempuan,
@@ -262,17 +263,18 @@
     </div>
   </div>
   </div>
-  <section id="kontribusi" class="bg-dark-blue-500 px-4 md:px-16 xl:px-32 h-fit py-20">
+  <section id="kontribusi" class="bg-light-blue-500 px-4 md:px-16 xl:px-32 h-fit py-20">
     <div class="flex flex-col md:flex-row justify-between">
       <div class="flex flex-col ">
-        <h2 class="text-4xl font-medium text-white">Kontribusi</h2>
-        <p class="text-xl text-gray-50 mt-1">Kontribusi Pa Dony Untuk Sumedang</p>
+        <h2 class="text-4xl font-medium text-dark-blue-800">Kontribusi</h2>
+        <p class="text-xl text-gray-700 mt-1">Kontribusi Pa Dony Untuk Sumedang</p>
       </div>
       <a href="blog.html" target="_blank" rel="noopener noreferrer" class="button-outline mt-4 md:mt-0">Selengkapnya</a>
     </div>
     <div class="flex flex-row gap-3 no-scroll overflow-x-auto scroll-smooth snap-x max-w-full mt-12">
       <!-- card 1 -->
-      <div class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden">
+      <div
+        class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden card">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">01</h2>
           <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
@@ -287,7 +289,8 @@
       </div>
 
       <!-- card 2 -->
-      <div class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden">
+      <div
+        class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden card">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">02</h2>
           <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
@@ -302,7 +305,8 @@
       </div>
 
       <!-- card 3 -->
-      <div class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden">
+      <div
+        class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden card">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">03</h2>
           <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
@@ -316,9 +320,6 @@
         </div>
       </div>
     </div>
-
-
-
     </div>
   </section>
   <section id="assets" class="px-4 md:px-16 xl:px-32 py-20">
