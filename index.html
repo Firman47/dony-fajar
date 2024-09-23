@@ -270,69 +270,55 @@
       </div>
       <a href="blog.html" target="_blank" rel="noopener noreferrer" class="button-outline mt-4 md:mt-0">Selengkapnya</a>
     </div>
-    <div class="flex flex-row gap-2 no-scroll whitespace-nowrap scroll-smooth snap-x max-w-full mt-12">
+    <div class="flex flex-row gap-3 no-scroll overflow-x-auto scroll-smooth snap-x max-w-full mt-12">
       <!-- card 1 -->
-      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
+      <div class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">01</h2>
-          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover">
+          <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
         </div>
-        <div class="flex  flex-col">
-          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
-          <p class="text-gray-600 text-wrap">Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan
-            angka
-            kemiskinan
-            ekstrem menjadi 0,53% dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.</p>
+        <div class="flex flex-col w-full">
+          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Pencegahan Stunting dan Stuntin</h3>
+          <p class="text-gray-600 mt-2 break-words whitespace-normal">
+            Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan angka kemiskinan ekstrem menjadi 0,53%
+            dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.
+          </p>
         </div>
       </div>
 
       <!-- card 2 -->
-      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
+      <div class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">02</h2>
-          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover" />
+          <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
         </div>
-        <div class="flex flex-col">
-          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
-          <p class="text-gray-600 text-wrap">
-            Gerakan bersama melawan kemiskinan dan stunting berhasil
-            menurunkan angka kemiskinan ekstrem menjadi 0,53% dan meluncurkan
-            aplikasi SINURMI untuk memantau kesehatan ibu hamil.
+        <div class="flex flex-col w-full">
+          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Pencegahan Stunting dan Kemiskinan</h3>
+          <p class="text-gray-600 mt-2 break-words whitespace-normal">
+            Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan angka kemiskinan ekstrem menjadi 0,53%
+            dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.
           </p>
         </div>
       </div>
 
       <!-- card 3 -->
-      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
+      <div class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">03</h2>
-          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover" />
+          <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
         </div>
-        <div class="flex flex-col">
-          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
-          <p class="text-gray-600 text-wrap">
-            Gerakan bersama melawan kemiskinan dan stunting berhasil
-            menurunkan angka kemiskinan ekstrem menjadi 0,53% dan meluncurkan
-            aplikasi SINURMI untuk memantau kesehatan ibu hamil.
+        <div class="flex flex-col w-full">
+          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Pencegahan Stunting dan Pembangunan</h3>
+          <p class="text-gray-600 mt-2 break-words whitespace-normal">
+            Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan angka kemiskinan ekstrem menjadi 0,53%
+            dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.
           </p>
         </div>
       </div>
+    </div>
 
-      <!-- card 4 -->
-      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
-        <div class="flex flex-col gap-4">
-          <h2 class="text-4xl text-gray-400">04</h2>
-          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover" />
-        </div>
-        <div class="flex flex-col">
-          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
-          <p class="text-gray-600 text-wrap">
-            Gerakan bersama melawan kemiskinan dan stunting berhasil
-            menurunkan angka kemiskinan ekstrem menjadi 0,53% dan meluncurkan
-            aplikasi SINURMI untuk memantau kesehatan ibu hamil.
-          </p>
-        </div>
-      </div>
+
+
     </div>
   </section>
   <section id="assets" class="px-4 md:px-16 xl:px-32 py-20">
@@ -459,7 +445,7 @@
     const cloSebanner = document.getElementById("close-banner");
     const banner = document.getElementById("banner");
     cloSebanner.addEventListener("click", function () {
-     banner.classList.toggle("hidden");
+      banner.classList.toggle("hidden");
     });
 
     function toggleMenu() {
