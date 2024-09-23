@@ -3663,6 +3663,10 @@ html {
     margin-left: 0.75rem;
   }
 
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
   .md\:flex {
     display: flex;
   }
