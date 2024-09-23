@@ -26,7 +26,7 @@
           <h4 class="p-2 font-semibold">
             Ikutan gamenya! biar dapet
             <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
-          </h4>
+          </h6>
         </div>
 
         <h4 class="text-sm font-semibold">
@@ -567,9 +567,9 @@
           <div class="space-y-1">
             <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
 
-            <p class="font-medium text-dark-blue-500 mb-2">
-              Dr. Dony Ahmad Munir, S.T., M.M.
-            </p>
+          <p class="font-medium text-dark-blue-500 mb-2">
+            Dr. Dony Ahmad Munir, S.T., M.M.
+          </p>
 
             <div class="flex justify-center sm:justify-end gap-2 min-w-full">
               <a href="#">
@@ -592,6 +592,46 @@
           </div>
         </div>
       </div>
+
+    <p class="text-center mt-2 text-black text-sm">©2024 DonyFajar</p>
+  </footer>
+  <!-- Navbar -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+      } else {
+        menu.classList.add("hidden");
+      }
+    }
+
+    // Fungsi untuk menyembunyikan menu ketika mengklik atau fokus di luar menu
+    document.addEventListener("click", function (event) {
+      var nav = document.getElementById("nav");
+      var targetElement = event.target;
+
+      // Periksa apakah targetElement berada di dalam menu atau tidak
+      var isClickInsideMenu = nav.contains(targetElement);
+
+      // Jika tidak, maka sembunyikan menu
+      if (!isClickInsideMenu) {
+        menu.classList.add("hidden");
+      }
+    });
+
+    function switchActiveMenu(currentMenu) {
+      var menu = document.getElementsByClassName("menu");
+      for (var i = 0; i < menu.length; i++) {
+        menu[i].classList.remove("active");
+      }
+      currentMenu.classList.add("active");
+
+      var nav = document.getElementById("menu");
+      nav.classList.add("hidden");
+    }
+  </script>
+</body>
 
       <p class="text-center text-black text-sm">©2024 DonyFajar</p>
     </footer>
