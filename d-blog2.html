@@ -358,6 +358,12 @@
     ></script>
 
     <script>
+      const cloSebanner = document.getElementById("close-banner");
+      const banner = document.getElementById("banner");
+      cloSebanner.addEventListener("click", function () {
+        banner.classList.toggle("hidden");
+      });
+
       function toggleMenu() {
         var menu = document.getElementById("menu");
         if (menu.classList.contains("hidden")) {

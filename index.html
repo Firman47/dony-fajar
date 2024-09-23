@@ -503,6 +503,12 @@
 
     <!-- Navbar -->
     <script>
+      const cloSebanner = document.getElementById("close-banner");
+      const banner = document.getElementById("banner");
+      cloSebanner.addEventListener("click", function () {
+        banner.classList.toggle("hidden");
+      });
+      
       function toggleMenu() {
         var menu = document.getElementById("menu");
         if (menu.classList.contains("hidden")) {
@@ -536,6 +542,7 @@
         var nav = document.getElementById("menu");
         nav.classList.add("hidden");
       }
+      
     </script>
     <!-- Scroll Active -->
     <script>
@@ -598,5 +605,6 @@
         });
       });
     </script>
+
   </body>
 </html>
