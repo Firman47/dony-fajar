@@ -896,6 +896,10 @@ html {
   margin-top: 6rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -906,14 +910,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
 }
 
 .box-border {
@@ -1033,10 +1029,6 @@ html {
   aspect-ratio: 16/9 !important;
 }
 
-.\!aspect-\[1\/1\] {
-  aspect-ratio: 1/1 !important;
-}
-
 .h-1 {
   height: 0.25rem;
 }
@@ -1053,12 +1045,16 @@ html {
   height: 1.25rem;
 }
 
-.h-\[135px\] {
-  height: 135px;
+.h-60 {
+  height: 15rem;
 }
 
 .h-\[21\.1875rem\] {
   height: 21.1875rem;
+}
+
+.h-\[480px\] {
+  height: 480px;
 }
 
 .h-\[99px\] {
@@ -1076,42 +1072,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-60 {
-  height: 15rem;
-}
-
-.h-64 {
-  height: 16rem;
-}
-
-.h-96 {
-  height: 24rem;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[580px\] {
-  height: 580px;
-}
-
-.h-\[500px\] {
-  height: 500px;
-}
-
-.h-\[480px\] {
-  height: 480px;
-}
-
-.h-dvh {
-  height: 100dvh;
 }
 
 .min-h-\[99px\] {
@@ -1166,6 +1126,10 @@ html {
   width: weird-and-invalid;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -1179,36 +1143,12 @@ html {
   width: 100vw;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-\[480px\] {
-  width: 480px;
-}
-
-.w-\[calc\(50\%-1rem\)\] {
-  width: calc(50% - 1rem);
-}
-
-.w-\[80px\] {
-  width: 80px;
-}
-
-.w-\[180px\] {
-  width: 180px;
-}
-
 .min-w-\[100px\] {
   min-width: 100px;
+}
+
+.min-w-\[600px\] {
+  min-width: 600px;
 }
 
 .min-w-\[80px\] {
@@ -1223,16 +1163,12 @@ html {
   min-width: 100%;
 }
 
-.min-w-96 {
-  min-width: 24rem;
-}
-
-.min-w-\[600px\] {
-  min-width: 600px;
-}
-
 .max-w-2xl {
   max-width: 42rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .max-w-7xl {
@@ -1251,24 +1187,12 @@ html {
   max-width: 99px;
 }
 
-.max-w-none {
-  max-width: none;
-}
-
-.max-w-screen-sm {
-  max-width: 640px;
-}
-
-.max-w-96 {
-  max-width: 24rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
 
-.max-w-4xl {
-  max-width: 56rem;
+.max-w-none {
+  max-width: none;
 }
 
 .flex-1 {
@@ -1630,12 +1554,12 @@ html {
   grid-auto-flow: column dense;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2577,6 +2501,10 @@ html {
      object-fit: scale-down;
 }
 
+.p-16 {
+  padding: 4rem;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -2591,10 +2519,6 @@ html {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-16 {
-  padding: 4rem;
 }
 
 .px-1 {
@@ -2680,11 +2604,6 @@ html {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-}
-
-.py-48 {
-  padding-top: 12rem;
-  padding-bottom: 12rem;
 }
 
 .pb-32 {
@@ -2798,6 +2717,11 @@ html {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2821,11 +2745,6 @@ html {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -2970,11 +2889,6 @@ html {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-900 {
-  --tw-text-opacity: 1;
-  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -3493,6 +3407,26 @@ html {
   padding: 2.5rem;
 }
 
+/* Hidden Scroll */
+
+/* Menyembunyikan scrollbar pada elemen tertentu */
+
+.no-scroll{
+  overflow: auto;
+}
+
+.no-scroll::-webkit-scrollbar {
+  width: 0px;
+  /* Menyembunyikan scrollbar pada Chrome, Safari, dan Edge */
+}
+
+.no-scroll {
+  -ms-overflow-style: none;
+  /* Menyembunyikan scrollbar pada Internet Explorer dan Edge Legacy */
+  scrollbar-width: none;
+  /* Menyembunyikan scrollbar pada Firefox */
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3598,10 +3532,6 @@ html {
     height: 42.375rem;
   }
 
-  .sm\:w-\[100px\] {
-    width: 100px;
-  }
-
   .sm\:min-w-\[100px\] {
     min-width: 100px;
   }
@@ -3640,10 +3570,6 @@ html {
     line-height: 1;
   }
 
-  .sm\:text-\[24px\] {
-    font-size: 24px;
-  }
-
   .sm\:text-6xl {
     font-size: 3.75rem;
     line-height: 1;
@@ -3677,14 +3603,6 @@ html {
 
   .md\:w-1\/2 {
     width: 50%;
-  }
-
-  .md\:w-\[140px\] {
-    width: 140px;
-  }
-
-  .md\:w-\[250px\] {
-    width: 250px;
   }
 
   .md\:min-w-\[140px\] {
@@ -3724,10 +3642,6 @@ html {
 @media (min-width: 1024px) {
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:flex-row {
