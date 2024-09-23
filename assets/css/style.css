@@ -1110,6 +1110,10 @@ html {
   height: 480px;
 }
 
+.h-dvh {
+  height: 100dvh;
+}
+
 .min-h-\[99px\] {
   min-height: 99px;
 }
