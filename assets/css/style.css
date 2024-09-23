@@ -1074,6 +1074,10 @@ html {
   height: 100%;
 }
 
+.h-dvh {
+  height: 100dvh;
+}
+
 .min-h-\[99px\] {
   min-height: 99px;
 }
@@ -1143,6 +1147,18 @@ html {
   width: 100vw;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.\!w-80 {
+  width: 20rem !important;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -1161,6 +1177,14 @@ html {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-\[180px\] {
+  min-width: 180px;
+}
+
+.min-w-60 {
+  min-width: 15rem;
 }
 
 .max-w-2xl {
@@ -2606,6 +2630,16 @@ html {
   padding-bottom: 1.5rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .pb-32 {
   padding-bottom: 8rem;
 }
@@ -2644,6 +2678,14 @@ html {
 
 .pt-9 {
   padding-top: 2.25rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-left {
@@ -3575,6 +3617,11 @@ html {
     line-height: 1;
   }
 
+  .sm\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3607,6 +3654,10 @@ html {
 
   .md\:min-w-\[140px\] {
     min-width: 140px;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:flex-row {

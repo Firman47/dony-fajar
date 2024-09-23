@@ -48,6 +48,17 @@
     </div>
     <div class="px-4 py-4  md:px-[24px] lg:px-[120px] flex justify-between items-center">
       <div class="flex gap-3">
+        <!-- Brand (Logo) -->
+        <a class="items-center" href="/index.html">
+          <div class="flex items-center gap-2">
+            <img src="assets/img/logo.png" alt="" srcset="">
+          </div>
+        </a>
+      </div>
+      <div class="flex gap-3">
+        <div class="md:hidden flex gap-3">
+          <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
+        </div>
         <button type="button" class="md:hidden text-gray-600 focus:outline-none" data-target="#menu"
           onclick="toggleMenu()">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -57,18 +68,8 @@
           </svg>
           <span class="hidden">toggle</span>
         </button>
-        <!-- Brand (Logo) -->
-        <a class="items-center" href="/index.html">
-          <div class="flex items-center gap-2">
-            <img src="assets/img/logo.png" alt="" srcset="">
-          </div>
-        </a>
-      </div>
-      <!-- Toggler untuk menu responsif -->
-      <div class="md:hidden flex gap-3">
-        <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
-      </div>
 
+      </div>
       <div class="hidden md:flex md:items-center md:space-x-4">
         <a href="index.html#hero" class="btn-text menu ">Beranda</a>
         <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>

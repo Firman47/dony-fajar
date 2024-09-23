@@ -40,6 +40,17 @@
         </div>
         <div class="px-4 py-4  md:px-[24px] lg:px-[120px] flex justify-between items-center">
             <div class="flex gap-3">
+                <!-- Brand (Logo) -->
+                <a class="items-center" href="/index.html">
+                    <div class="flex items-center gap-2">
+                        <img src="assets/img/logo.png" alt="" srcset="">
+                    </div>
+                </a>
+            </div>
+            <div class="flex gap-3">
+                <div class="md:hidden flex gap-3">
+                    <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
+                </div>
                 <button type="button" class="md:hidden text-gray-600 focus:outline-none" data-target="#menu"
                     onclick="toggleMenu()">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -49,18 +60,8 @@
                     </svg>
                     <span class="hidden">toggle</span>
                 </button>
-                <!-- Brand (Logo) -->
-                <a class="items-center" href="/index.html">
-                    <div class="flex items-center gap-2">
-                        <img src="assets/img/logo.png" alt="" srcset="">
-                    </div>
-                </a>
-            </div>
-            <!-- Toggler untuk menu responsif -->
-            <div class="md:hidden flex gap-3">
-                <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
-            </div>
 
+            </div>
             <div class="hidden md:flex md:items-center md:space-x-4">
                 <a href="index.html#hero" class="btn-text menu ">Beranda</a>
                 <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
@@ -81,7 +82,7 @@
             <a href="blog.html" class="btn-text menu">Blog</a>
         </div>
     </nav>
-    <main class="pt-0 xl:pt-12">
+    <main class="pt-16 ">
         <section class="w-full p-responsive flex flex-col items-center justify-center gap-12">
             <div class="text-center mt-10 py-20">
                 <h1 class="text-5xl font-semibold text-dark-blue-900">Berita</h1>
@@ -92,10 +93,10 @@
                     </span>
                 </p>
             </div>
-            <div class="bg-light-blue-50 flex flex-col items-center p-16">
+            <div class="bg-light-blue-50 flex flex-col items-center px-4 md:px-16 xl:px-32 py-8">
                 <div class="max-w-[782px] flex flex-col gap-4 ">
                     <div>
-                        <h2 class="text-3xl font-semibold line-clamp-2 text-gray-800">Melanjutkan Kebaikan untuk
+                        <h2 class="text-3xl font-semibold text-gray-800">Melanjutkan Kebaikan untuk
                             Sumedang
                             Semakin Maju
                         </h2>
@@ -205,11 +206,11 @@
                 <div class="px-4 md:px-16 xl:px-32 py-16">
                     <h2 class="text-xl font-semibold">Berita Lainnya</h2>
 
-                    <div class="grid grid-cols-2 gap-4 mt-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                         <a href="d-blog1.html">
                             <div class="card rounded-lg flex flex-col sm:flex-row gap-4 bg-white">
                                 <div class="!aspect-[16/9] object-cover w-full  rounded overflow-hidden">
-                                    <img src="assets/img/blog1.jpg" alt="Image" class="object-cover h-full" />
+                                    <img src="assets/img/blog1.jpg" alt="Image" class="h-60 w-auto object-cover" />
                                 </div>
                                 <div class="flex flex-col">
                                     <p class="text-base space-x-2">
@@ -235,7 +236,7 @@
                         <a href="d-blog2.html">
                             <div class="card rounded-lg flex flex-col sm:flex-row gap-4 bg-white">
                                 <div class="!aspect-[16/9] object-cover w-full  rounded overflow-hidden">
-                                    <img src="assets/img/blog2.jpg" alt="Image" class="object-cover h-full" />
+                                    <img src="assets/img/blog2.jpg" alt="Image" class="h-60 w-auto object-cover" />
                                 </div>
                                 <div class="flex flex-col">
                                     <p class="text-base space-x-2">
@@ -383,6 +384,10 @@
             nav.classList.add("hidden");
         }
     </script>
+    <!-- Sosmed Share -->
+    <script type="text/javascript"
+        src="https://platform-api.sharethis.com/js/sharethis.js#property=66f0d1488fa86200193eafae&product=inline-share-buttons&source=platform"
+        async="async"></script>
 </body>
 
 </html>
