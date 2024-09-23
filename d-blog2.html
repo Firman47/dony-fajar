@@ -4,306 +4,269 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
-    <header class="space-y-3 hidden sm:block">
+    <nav class="fixed top-0 z-20 w-screen bg-white sh-4 flex flex-col" id="nav">
       <div
-        id="banner2"
-        class="bg-light-blue-500 flex gap-4 p-2 justify-center items-center relative"
+        id="banner"
+        class="bg-light-blue-500 flex p-2 justify-center items-center relative"
       >
-        <div class="flex items-center justify-center">
-          <span class="relative flex h-3 w-3">
-            <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-dark-blue-500 opacity-75"
-            ></span>
-            <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-dark-blue-500"
-            ></span>
-          </span>
+        <div class="flex flex-col md:flex-row items-center justify-cente gap-2">
+          <div class="flex justify-center items-center gap-1">
+            <span class="relative flex h-3 w-3">
+              <span
+                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-dark-blue-500 opacity-75"
+              ></span>
+              <span
+                class="relative inline-flex rounded-full h-3 w-3 bg-dark-blue-500"
+              ></span>
+            </span>
 
-          <h4 class="p-2 font-semibold">
-            Ikutan gamenya! biar dapet
-            <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
-          </h4>
+            <h6 class="text-sm md:text-base font-semibold text-black">
+              Ikutan gamenya! biar dapet
+              <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
+            </h6>
+          </div>
+
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex w-fit h-fit gap-2 text-nowrap bg-light-blue-400 py-2 px-4 font-semibold text-sm rounded-lg text-dark-blue-500 border-[1.3px] border-dark-blue-500"
+            >Main Sekarang!</a
+          >
+        </div>
+        <button id="close-banner" class="absolute right-6">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.5459 17.954C19.7572 18.1653 19.876 18.452 19.876 18.7509C19.876 19.0497 19.7572 19.3364 19.5459 19.5477C19.3346 19.7591 19.0479 19.8778 18.749 19.8778C18.4501 19.8778 18.1635 19.7591 17.9521 19.5477L12 13.5937L6.0459 19.5459C5.83455 19.7572 5.54791 19.8759 5.24902 19.8759C4.95014 19.8759 4.66349 19.7572 4.45215 19.5459C4.2408 19.3345 4.12207 19.0479 4.12207 18.749C4.12207 18.4501 4.2408 18.1635 4.45215 17.9521L10.4062 11.9999L4.45402 6.04586C4.24268 5.83451 4.12395 5.54787 4.12395 5.24898C4.12395 4.9501 4.24268 4.66345 4.45402 4.45211C4.66537 4.24076 4.95201 4.12203 5.2509 4.12203C5.54978 4.12203 5.83643 4.24076 6.04777 4.45211L12 10.4062L17.954 4.45117C18.1654 4.23983 18.452 4.12109 18.7509 4.12109C19.0498 4.12109 19.3364 4.23983 19.5478 4.45117C19.7591 4.66251 19.8778 4.94916 19.8778 5.24804C19.8778 5.54693 19.7591 5.83358 19.5478 6.04492L13.5937 11.9999L19.5459 17.954Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div
+        class="px-4 py-4 md:px-[24px] lg:px-[120px] flex justify-between items-center"
+      >
+        <div class="flex gap-3">
+          <button
+            type="button"
+            class="md:hidden text-gray-600 focus:outline-none"
+            data-target="#menu"
+            onclick="toggleMenu()"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12ZM3.75 7.125H20.25C20.5484 7.125 20.8345 7.00647 21.0455 6.7955C21.2565 6.58452 21.375 6.29837 21.375 6C21.375 5.70163 21.2565 5.41548 21.0455 5.2045C20.8345 4.99353 20.5484 4.875 20.25 4.875H3.75C3.45163 4.875 3.16548 4.99353 2.9545 5.2045C2.74353 5.41548 2.625 5.70163 2.625 6C2.625 6.29837 2.74353 6.58452 2.9545 6.7955C3.16548 7.00647 3.45163 7.125 3.75 7.125ZM20.25 16.875H3.75C3.45163 16.875 3.16548 16.9935 2.9545 17.2045C2.74353 17.4155 2.625 17.7016 2.625 18C2.625 18.2984 2.74353 18.5845 2.9545 18.7955C3.16548 19.0065 3.45163 19.125 3.75 19.125H20.25C20.5484 19.125 20.8345 19.0065 21.0455 18.7955C21.2565 18.5845 21.375 18.2984 21.375 18C21.375 17.7016 21.2565 17.4155 21.0455 17.2045C20.8345 16.9935 20.5484 16.875 20.25 16.875Z"
+                fill="#2B2B6F"
+              />
+            </svg>
+            <span class="hidden">toggle</span>
+          </button>
+          <!-- Brand (Logo) -->
+          <a class="items-center" href="/index.html">
+            <div class="flex items-center gap-2">
+              <img src="assets/img/logo.png" alt="" srcset="" />
+            </div>
+          </a>
+        </div>
+        <!-- Toggler untuk menu responsif -->
+        <div class="md:hidden flex gap-3">
+          <a href="agenda.html" rel="noopener noreferrer" class="button-outline"
+            >Lihat Agenda</a
+          >
         </div>
 
-        <h4 class="text-sm font-semibold">
-          Ikutan gamenya! biar dapet
-          <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
-        </h4>
-
-        <p id="close-banner2" class="absolute right-4">
-          <img src="assets/img/close.svg" alt="" />
-        </p>
-      </div>
-
-      <div class="flex items-center justify-between p-responsive">
-        <div><img src="assets/img/logo.png" alt="" /></div>
-        <nav class="text-gray-500 flex items-center justify-center gap-6">
-          <a href="" class="nav-link-active">Beranda</a>
-          <a href="">Prestasi</a>
-          <a href="">Visi & Misi</a>
-          <a href="">Biografi</a>
-          <a href="">Berita</a>
-        </nav>
-
-        <a href="" class="button-outline">Dukungan</a>
-      </div>
-    </header>
-
-    <header class="sm:hidden">
-      <div id="banner" class="bg-light-blue-500 space-y-2 p-5 py-2 relatives">
-        <div class="flex justify-center items-center pr-5 gap-2">
-          <span class="relative flex h-3 w-3">
-            <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-dark-blue-500 opacity-75"
-            ></span>
-            <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-dark-blue-500"
-            ></span>
-          </span>
-
-          <h4 class="text-sm font-semibold">
-            Ikutan gamenya! biar dapet
-            <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
-          </h4>
+        <div class="hidden md:flex md:items-center md:space-x-4">
+          <a href="index.html#hero" class="btn-text menu">Beranda</a>
+          <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
+          <a href="index.html#kontribusi" class="btn-text menu">Kontribusi</a>
+          <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>
+          <a href="blog.html" class="btn-text menu active">Blog</a>
         </div>
-        <a
-          href="#"
-          class="button-outline flex items-end justify-center gap-2 w-full"
-          >Main Sekarang!
-          <img src="assets/img/arrow-left.svg" alt="" />
-        </a>
-
-        <p id="close-banner" class="absolute top-0 right-4">
-          <img src="assets/img/close.svg" alt="" />
-        </p>
+        <div class="hidden md:flex md:items-center md:ml-3">
+          <a href="agenda.html" rel="noopener noreferrer" class="button-outline"
+            >Lihat Agenda</a
+          >
+        </div>
       </div>
 
-      <div class="flex items-center justify-between p-5">
-        <div><img src="assets/img/logo.png" alt="" class="w-[40px]" /></div>
+      <div
+        class="hidden px-4 py-4 border-y-1 flex border-gray-200 space-y-2 items-center flex-col md:hidden md:items-center"
+        id="menu"
+      >
+        <a href="index.html#hero" class="btn-text menu">Beranda</a>
+        <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
+        <a href="index.html#kontribusi" class="btn-text menu">Kontribusi</a>
+        <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>
+        <a href="blog.html" class="btn-text menu">Blog</a>
+      </div>
+    </nav>
 
-        <div class="flex gap-2 items-center justify-center">
-          <a href="" class="button-outline">Dukungan</a>
+    <main class="pt-12 xl:pt-12">
+      <section class="w-full flex flex-col items-center justify-center gap-12">
+        <div class="text-center mt-10 py-20">
+          <h1 class="text-5xl font-semibold text-dark-blue-900">Berita</h1>
+          <p class="text-base mt-2 bg-white">
+            <span class="text-dark-blue-500 font-bold">Beranda /Berita</span>
+            <span class="font-medium"> /Muda Teruji Terbukti </span>
+          </p>
+        </div>
 
-          <div class="space-y-1" id="btnNav">
-            <div class="h-1 w-6 bg-dark-blue-500"></div>
-            <div class="h-1 w-6 bg-dark-blue-500"></div>
-            <div class="h-1 w-6 bg-dark-blue-500"></div>
+        <div class="bg-light-blue-50 flex flex-col items-center">
+          <div class="px-5 sm:px-32 md:px-64 flex flex-col gap-4">
+            <div>
+              <h2 class="text-3xl font-semibold line-clamp-2 text-gray-800">
+                Muda Teruji Terbukti
+              </h2>
+              <div class="flex flex-row text-xl gap-2 mt-4">
+                <span class="label">Informasi</span> <span>19 Sep 24</span>
+              </div>
+              <div class="sharethis-inline-share-buttons mt-4"></div>
+            </div>
+
+            <div>
+              <img src="assets/img/blog2.jpg" alt="Image" class="w-full" />
+            </div>
+
+            <div class="space-y-12">
+              <p class="text-base text-gray-700">
+                Bupati Sumedang 2018-2023, Dony Ahmad Munir, yang kembali
+                mencalonkan diri menjadi bupati untuk periode kedua,
+                2024-2029.<br />
+                Untuk memimpin Sumedang lima tahun ke depan, Dony Ahmad Munir
+                menggandeng politisi muda yang juga kader PAN, M Fajar
+                Aldila.<br /><br />
+
+                Pasangan Dony-Fajar yang mengusung visi "SUMEDANG SIMPATI
+                SEMAKIN MAJU MENUJU INDONESIA EMAS 2045" diusung oleh lima
+                partai politik: PPP, PAN, PKB, Demokrat, dan Gerindra.<br />
+                Kemudian, satu partai pendukung yaitu Partai Gelora.<br /><br />
+
+                Selama lima tahun memimpin Sumedang, banyak perubahan yang
+                dilakukannya.<br />
+                Sehingga saat ini, elektabilitas Dony Ahmad Munir paling
+                tinggi.<br />
+                “Terima kasih kepada masyarakat Sumedang atas kepercayaannya
+                kepada saya dengan tingkat elektabilitas tertinggi di
+                Sumedang.<br />
+                Insyaallah, kepercayaan ini tentunya tidak akan disia-siakan,
+                menjadi sumber energi, semangat, dan motivasi,” kata Dony.<br /><br />
+
+                Dony menyadari bahwa selama kepemimpinannya pada periode
+                sebelumnya, masih ada hal-hal yang perlu dilakukan penguatan,
+                baik pada tataran kebijakan maupun operasional agar tujuan
+                pembangunan lima tahun ke depan dapat tercapai.<br />
+                “Untuk itulah pada periode kedua ini kami memiliki tagline
+                *LANJUTKAN SUMEDANG LEBIH MAJU* dengan visi *SUMEDANG SIMPATI
+                SEMAKIN MAJU MENUJU INDONESIA EMAS 2045*,” kata Dony.<br /><br />
+
+                Menurutnya, lima tahun ke depan akan mewujudkan Sumedang
+                Sejahtera yang aman, nyaman dengan kuatnya nilai moral keagamaan
+                dan keragaman.<br />
+                Mendorong tumbuhnya daerah yang maju dan berkeadilan.<br /><br />
+
+                “Kami melibatkan seluruh potensi sumber daya manusia, sumber
+                daya alam, pertanian, ekonomi, budaya, politik, ekonomi kreatif,
+                ilmu pengetahuan serta teknologi ramah lingkungan yang
+                berkelanjutan untuk menuju Sumedang Emas 2045.” [*]
+              </p>
+            </div>
+          </div>
+
+          <div class="p-responsive py-16">
+            <h2 class="text-xl font-semibold">Berita Lainnya</h2>
+
+            <div class="flex flex-col sm:flex-row gap-4 mt-4">
+              <a href="d-blog1.html">
+                <div
+                  class="card rounded-lg flex flex-col sm:flex-row gap-4 bg-white"
+                >
+                  <div class="min-w-[40%] rounded overflow-hidden">
+                    <img
+                      src="assets/img/blog1.jpg"
+                      alt="Image"
+                      class="object-cover h-full w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <p class="text-base space-x-2">
+                      <span class="label">Informasi</span>
+                      <span class="text-base text-gray-600">19 Sep 24</span>
+                    </p>
+                    <h3
+                      class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
+                    >
+                      Melanjutkan Kebaikan untuk Sumedang Semakin Maju Kabupaten
+                    </h3>
+                    <p
+                      class="text-base text-gray-600 line-clamp-2 sm:line-clamp-3 mt-1"
+                    >
+                      Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony
+                      Ahmad Munir mengalami perubahan yang cepat di berbagai
+                      bidang. Menjadi rujukan nasional, semakin dikenal dan
+                      meraih berbagai penghargaan atas inovasi dalam
+                      penyelenggaraan pemerintahan. Pemerintahan daerah, lembaga
+                      se-Indonesia berdatangan silih berganti untuk belajar
+                      kepada Sumedang dalam transformasi digital.
+                    </p>
+                  </div>
+                </div>
+              </a>
+
+              <a href="d-blog2.html">
+                <div
+                  class="card rounded-lg flex flex-col sm:flex-row gap-4 bg-white"
+                >
+                  <div class="min-w-[40%] rounded overflow-hidden">
+                    <img
+                      src="assets/img/blog2.jpg"
+                      alt="Image"
+                      class="object-cover h-full w-full"
+                    />
+                  </div>
+                  <div class="flex flex-col">
+                    <p class="text-base space-x-2">
+                      <span class="label">Informasi</span>
+                      <span class="text-base text-gray-600">19 Sep 24</span>
+                    </p>
+                    <h3
+                      class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
+                    >
+                      Melanjutkan Kebaikan untuk Sumedang Semakin Maju Kabupaten
+                    </h3>
+                    <p
+                      class="text-base text-gray-600 line-clamp-2 sm:line-clamp-3 mt-1"
+                    >
+                      Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony
+                      Ahmad Munir mengalami perubahan yang cepat di berbagai
+                      bidang. Menjadi rujukan nasional, semakin dikenal dan
+                      meraih berbagai penghargaan atas inovasi dalam
+                      penyelenggaraan pemerintahan. Pemerintahan daerah, lembaga
+                      se-Indonesia berdatangan silih berganti untuk belajar
+                      kepada Sumedang dalam transformasi digital.
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
+    </main>
 
-      <nav
-        id="nav-visible"
-        class="w-full bg-white text-gray-500 flex-col items-center justify-center gap-4 pb-4 absolute hidden"
-      >
-        <a href="" class="nav-link-active">Beranda</a>
-        <a href="">Prestasi</a>
-        <a href="">Visi & Misi</a>
-        <a href="">Biografi</a>
-        <a href="blog.html">Berita</a>
-      </nav>
-    </header>
-
-    <section
-      class="w-full p-responsive flex flex-col items-center justify-center gap-12"
-    >
-      <div class="text-center py-10">
-        <h1 class="h1">Berita</h1>
-        <p class="text-base">
-          <span class="text-dark-blue-500 font-bold">Berana /Berita</span>
-          <span class="font-medium"> /Muda Teruji Terbukti </span>
-        </p>
-      </div>
-
-      <div class="max-w-[782px] space-y-6">
-        <div>
-          <h2 class="h2">Muda Teruji Terbukti</h2>
-          <p class="p space-x-2">
-            <span class="label">Informasi</span> <span>19 Sep 24</span>
-          </p>
-          <div class="sharethis-inline-share-buttons mt-4"></div>
-        </div>
-
-        <div>
-          <img src="assets/img/blog2.jpg" alt="Image" class="w-full" />
-        </div>
-
-        <div class="space-y-12">
-          <p class="">
-            Bupati Sumedang 2018-2023, Dony Ahmad Munir, yang kembali
-            mencalonkan diri menjadi bupati untuk periode kedua, 2024-2029.<br />
-            Untuk memimpin Sumedang lima tahun ke depan, Dony Ahmad Munir
-            menggandeng politisi muda yang juga kader PAN, M Fajar Aldila.<br /><br />
-
-            Pasangan Dony-Fajar yang mengusung visi "SUMEDANG SIMPATI SEMAKIN
-            MAJU MENUJU INDONESIA EMAS 2045" diusung oleh lima partai politik:
-            PPP, PAN, PKB, Demokrat, dan Gerindra.<br />
-            Kemudian, satu partai pendukung yaitu Partai Gelora.<br /><br />
-
-            Selama lima tahun memimpin Sumedang, banyak perubahan yang
-            dilakukannya.<br />
-            Sehingga saat ini, elektabilitas Dony Ahmad Munir paling tinggi.<br />
-            “Terima kasih kepada masyarakat Sumedang atas kepercayaannya kepada
-            saya dengan tingkat elektabilitas tertinggi di Sumedang.<br />
-            Insyaallah, kepercayaan ini tentunya tidak akan disia-siakan,
-            menjadi sumber energi, semangat, dan motivasi,” kata Dony.<br /><br />
-
-            Dony menyadari bahwa selama kepemimpinannya pada periode sebelumnya,
-            masih ada hal-hal yang perlu dilakukan penguatan, baik pada tataran
-            kebijakan maupun operasional agar tujuan pembangunan lima tahun ke
-            depan dapat tercapai.<br />
-            “Untuk itulah pada periode kedua ini kami memiliki tagline
-            *LANJUTKAN SUMEDANG LEBIH MAJU* dengan visi *SUMEDANG SIMPATI
-            SEMAKIN MAJU MENUJU INDONESIA EMAS 2045*,” kata Dony.<br /><br />
-
-            Menurutnya, lima tahun ke depan akan mewujudkan Sumedang Sejahtera
-            yang aman, nyaman dengan kuatnya nilai moral keagamaan dan
-            keragaman.<br />
-            Mendorong tumbuhnya daerah yang maju dan berkeadilan.<br /><br />
-
-            “Kami melibatkan seluruh potensi sumber daya manusia, sumber daya
-            alam, pertanian, ekonomi, budaya, politik, ekonomi kreatif, ilmu
-            pengetahuan serta teknologi ramah lingkungan yang berkelanjutan
-            untuk menuju Sumedang Emas 2045.” [*]
-          </p>
-        </div>
-      </div>
-
-      <div class="space-y-8 py-16">
-        <h2 class="h2">Berita Lainnya</h2>
-
-        <div class="grid grid-cols-2 gap-4">
-          <a href="blog-detatail.html">
-            <div class="card rounded-lg flex flex-col sm:flex-row gap-4">
-              <div
-                class="min-w-[80px] sm:min-w-[100px] md:min-w-[140px] rounded overflow-hidden"
-              >
-                <img
-                  src="assets/img/blog1.jpg"
-                  alt="Image"
-                  class="object-cover h-full"
-                />
-              </div>
-              <div class="flex flex-col">
-                <p class="p space-x-2">
-                  <span class="label hidden sm:inline-block">Informasi</span>
-                  <span>19 Sep 24</span>
-                </p>
-                <h3 class="h3 line-clamp-1">
-                  Melanjutkan Kebaikan untuk Sumedang Semakin Maju Kabupaten
-                </h3>
-                <p class="p line-clamp-1 sm:line-clamp-3">
-                  Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony Ahmad
-                  Munir mengalami perubahan yang cepat di berbagai bidang.
-                  Menjadi rujukan nasional, semakin dikenal dan meraih berbagai
-                  penghargaan atas inovasi dalam penyelenggaraan pemerintahan.
-                  Pemerintahan daerah, lembaga se-Indonesia berdatangan silih
-                  berganti untuk belajar kepada Sumedang dalam transformasi
-                  digital.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="blog-detatail2.html">
-            <div class="card rounded-lg flex flex-col sm:flex-row gap-4">
-              <div
-                class="min-w-[80px] sm:min-w-[100px] md:min-w-[140px] rounded overflow-hidden"
-              >
-                <img
-                  src="assets/img/blog2.jpg"
-                  alt="Image"
-                  class="object-cover h-full"
-                />
-              </div>
-              <div class="flex flex-col">
-                <p class="p space-x-2">
-                  <span class="label hidden sm:inline-block">Informasi</span>
-                  <span>19 Sep 24</span>
-                </p>
-                <h3 class="h3 line-clamp-1">Muda Teruji Terbukti</h3>
-                <p class="p line-clamp-1 sm:line-clamp-3">
-                  Bupati Sumedang 2018-2023, Dony Ahmad Munir, yang kembali
-                  mencalonkan diri menjadi bupati untuk periode kedua,
-                  2024-2029. Untuk memimpin Sumedang lima tahun ke depan, Dony
-                  Ahmad Munir menggandeng politisi muda yang juga kader PAN, M
-                  Fajar Aldila. digital.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="blog-detatail2.html">
-            <div class="card rounded-lg flex flex-col sm:flex-row gap-4">
-              <div
-                class="min-w-[80px] sm:min-w-[100px] md:min-w-[140px] rounded overflow-hidden"
-              >
-                <img
-                  src="assets/img/blog2.jpg"
-                  alt="Image"
-                  class="object-cover h-full"
-                />
-              </div>
-              <div class="flex flex-col">
-                <p class="p space-x-2">
-                  <span class="label hidden sm:inline-block">Informasi</span>
-                  <span>19 Sep 24</span>
-                </p>
-                <h3 class="h3 line-clamp-1">Muda Teruji Terbukti</h3>
-                <p class="p line-clamp-1 sm:line-clamp-3">
-                  Bupati Sumedang 2018-2023, Dony Ahmad Munir, yang kembali
-                  mencalonkan diri menjadi bupati untuk periode kedua,
-                  2024-2029. Untuk memimpin Sumedang lima tahun ke depan, Dony
-                  Ahmad Munir menggandeng politisi muda yang juga kader PAN, M
-                  Fajar Aldila. digital.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="blog-detatail.html">
-            <div class="card rounded-lg flex flex-col sm:flex-row gap-4">
-              <div
-                class="min-w-[80px] sm:min-w-[100px] md:min-w-[140px] rounded overflow-hidden"
-              >
-                <img
-                  src="assets/img/blog1.jpg"
-                  alt="Image"
-                  class="object-cover h-full"
-                />
-              </div>
-              <div class="flex flex-col">
-                <p class="p space-x-2">
-                  <span class="label hidden sm:inline-block">Informasi</span>
-                  <span>19 Sep 24</span>
-                </p>
-                <h3 class="h3 line-clamp-1">
-                  Melanjutkan Kebaikan untuk Sumedang Semakin Maju Kabupaten
-                </h3>
-                <p class="p line-clamp-1 sm:line-clamp-3">
-                  Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony Ahmad
-                  Munir mengalami perubahan yang cepat di berbagai bidang.
-                  Menjadi rujukan nasional, semakin dikenal dan meraih berbagai
-                  penghargaan atas inovasi dalam penyelenggaraan pemerintahan.
-                  Pemerintahan daerah, lembaga se-Indonesia berdatangan silih
-                  berganti untuk belajar kepada Sumedang dalam transformasi
-                  digital.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="p-responsive py-4 space-y-3 bg-light-blue-100">
+    <footer class="text-base bg-light-blue-100 px-4 md:px-16 xl:px-32 py-12">
       <div
-        class="flex flex-col sm:flex-row gap-5 justify-center items-center w-full border-b border-gray-500 p-6"
+        class="flex flex-col sm:flex-row gap-5 justify-between items-center w-full border-b border-gray-500 py-6"
       >
         <div class="min-w-[100px] flex justify-center sm:hidden mb-4">
           <img src="assets/img/logo.png" alt="" />
@@ -312,7 +275,7 @@
         <div
           class="flex flex-col sm:flex-row gap-3 items-center justify-center text-center sm:text-start"
         >
-          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
+          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px] flex">
             <img src="assets/img/pp-dony.png" alt="" />
           </div>
 
@@ -344,7 +307,7 @@
           </div>
         </div>
 
-        <div class="min-w-[100px] justify-center hidden sm:block">
+        <div class="min-w-[100px]justify-center hidden sm:block">
           <img src="assets/img/logo.png" alt="" />
         </div>
 
@@ -384,14 +347,50 @@
         </div>
       </div>
 
-      <p class="text-center text-black text-sm">©2024 DonyFajar</p>
+      <p class="text-center mt-2 text-black text-sm">©2024 DonyFajar</p>
     </footer>
+    <!-- Navbar -->
 
     <script
       type="text/javascript"
       src="https://platform-api.sharethis.com/js/sharethis.js#property=66f0d1488fa86200193eafae&product=inline-share-buttons&source=platform"
       async="async"
     ></script>
-    <script src="assets/js/script.js"></script>
+
+    <script>
+      function toggleMenu() {
+        var menu = document.getElementById("menu");
+        if (menu.classList.contains("hidden")) {
+          menu.classList.remove("hidden");
+        } else {
+          menu.classList.add("hidden");
+        }
+      }
+
+      // Fungsi untuk menyembunyikan menu ketika mengklik atau fokus di luar menu
+      document.addEventListener("click", function (event) {
+        var nav = document.getElementById("nav");
+        var targetElement = event.target;
+
+        // Periksa apakah targetElement berada di dalam menu atau tidak
+        var isClickInsideMenu = nav.contains(targetElement);
+
+        // Jika tidak, maka sembunyikan menu
+        if (!isClickInsideMenu) {
+          menu.classList.add("hidden");
+        }
+      });
+
+      function switchActiveMenu(currentMenu) {
+        var menu = document.getElementsByClassName("menu");
+        for (var i = 0; i < menu.length; i++) {
+          menu[i].classList.remove("active");
+        }
+        currentMenu.classList.add("active");
+
+        var nav = document.getElementById("menu");
+        nav.classList.add("hidden");
+      }
+    </script>
   </body>
 </html>
