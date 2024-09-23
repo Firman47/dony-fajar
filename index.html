@@ -1,199 +1,530 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header class="space-y-3 hidden sm:block">
-      <div
-        id="banner2"
-        class="bg-light-blue-500 flex gap-4 p-2 justify-center items-center relative"
-      >
-        <div class="flex items-center justify-center">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dony Fajar Calon Bupati Sumedang 2025-2030</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <nav class="fixed top-0 z-20 w-screen bg-white sh-4 flex flex-col" id="nav">
+    <div id="banner" class="bg-light-blue-500 flex p-2 justify-center items-center relative">
+      <div class="flex flex-col md:flex-row items-center justify-cente gap-2">
+        <div class="flex  justify-center items-center gap-1">
           <span class="relative flex h-3 w-3">
             <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-dark-blue-500 opacity-75"
-            ></span>
-            <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-dark-blue-500"
-            ></span>
+              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-dark-blue-500 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-dark-blue-500"></span>
           </span>
 
-          <h4 class="p-2 font-semibold">
+          <h6 class="text-sm md:text-base font-semibold text-black">
             Ikutan gamenya! biar dapet
             <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
-          </h4>
+          </h6>
         </div>
 
-        <h4 class="text-sm font-semibold">
-          Ikutan gamenya! biar dapet
-          <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
-        </h4>
-
-        <p id="close-banner2" class="absolute right-4">
-          <img src="assets/img/close.svg" alt="" />
-        </p>
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          class=" inline-flex w-fit h-fit  gap-2 text-nowrap bg-light-blue-400 py-2 px-4 font-semibold text-sm rounded-lg  text-dark-blue-500 border-[1.3px]  border-dark-blue-500 ">Main
+          Sekarang!</a>
       </div>
-
-      <div class="flex items-center justify-between p-responsive">
-        <div><img src="assets/img/logo.png" alt="" /></div>
-        <nav class="text-gray-500 flex items-center justify-center gap-6">
-          <a href="" class="nav-link-active">Beranda</a>
-          <a href="">Prestasi</a>
-          <a href="">Visi & Misi</a>
-          <a href="">Biografi</a>
-          <a href="">Berita</a>
-        </nav>
-
-        <a href="" class="button-outline">Dukungan</a>
-      </div>
-    </header>
-
-    <header class="sm:hidden">
-      <div id="banner" class="bg-light-blue-500 space-y-2 p-5 py-2 relatives">
-        <div class="flex justify-center items-center pr-5 gap-2">
-          <span class="relative flex h-3 w-3">
-            <span
-              class="animate-ping absolute inline-flex h-full w-full rounded-full bg-dark-blue-500 opacity-75"
-            ></span>
-            <span
-              class="relative inline-flex rounded-full h-3 w-3 bg-dark-blue-500"
-            ></span>
-          </span>
-
-          <h4 class="text-sm font-semibold">
-            Ikutan gamenya! biar dapet
-            <span class="text-dark-blue-500">Iphone 14 GRATIS!</span>
-          </h4>
-        </div>
-        <a
-          href="#"
-          class="button-outline flex items-end justify-center gap-2 w-full"
-          >Main Sekarang!
-          <img src="assets/img/arrow-left.svg" alt="" />
+      <button id="close-banner" class="absolute right-6">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19.5459 17.954C19.7572 18.1653 19.876 18.452 19.876 18.7509C19.876 19.0497 19.7572 19.3364 19.5459 19.5477C19.3346 19.7591 19.0479 19.8778 18.749 19.8778C18.4501 19.8778 18.1635 19.7591 17.9521 19.5477L12 13.5937L6.0459 19.5459C5.83455 19.7572 5.54791 19.8759 5.24902 19.8759C4.95014 19.8759 4.66349 19.7572 4.45215 19.5459C4.2408 19.3345 4.12207 19.0479 4.12207 18.749C4.12207 18.4501 4.2408 18.1635 4.45215 17.9521L10.4062 11.9999L4.45402 6.04586C4.24268 5.83451 4.12395 5.54787 4.12395 5.24898C4.12395 4.9501 4.24268 4.66345 4.45402 4.45211C4.66537 4.24076 4.95201 4.12203 5.2509 4.12203C5.54978 4.12203 5.83643 4.24076 6.04777 4.45211L12 10.4062L17.954 4.45117C18.1654 4.23983 18.452 4.12109 18.7509 4.12109C19.0498 4.12109 19.3364 4.23983 19.5478 4.45117C19.7591 4.66251 19.8778 4.94916 19.8778 5.24804C19.8778 5.54693 19.7591 5.83358 19.5478 6.04492L13.5937 11.9999L19.5459 17.954Z"
+            fill="black" />
+        </svg>
+      </button>
+    </div>
+    <div class="px-4 py-4  md:px-[24px] lg:px-[120px] flex justify-between items-center">
+      <div class="flex gap-3">
+        <button type="button" class="md:hidden text-gray-600 focus:outline-none" data-target="#menu"
+          onclick="toggleMenu()">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M21.375 12C21.375 12.2984 21.2565 12.5845 21.0455 12.7955C20.8345 13.0065 20.5484 13.125 20.25 13.125H3.75C3.45163 13.125 3.16548 13.0065 2.9545 12.7955C2.74353 12.5845 2.625 12.2984 2.625 12C2.625 11.7016 2.74353 11.4155 2.9545 11.2045C3.16548 10.9935 3.45163 10.875 3.75 10.875H20.25C20.5484 10.875 20.8345 10.9935 21.0455 11.2045C21.2565 11.4155 21.375 11.7016 21.375 12ZM3.75 7.125H20.25C20.5484 7.125 20.8345 7.00647 21.0455 6.7955C21.2565 6.58452 21.375 6.29837 21.375 6C21.375 5.70163 21.2565 5.41548 21.0455 5.2045C20.8345 4.99353 20.5484 4.875 20.25 4.875H3.75C3.45163 4.875 3.16548 4.99353 2.9545 5.2045C2.74353 5.41548 2.625 5.70163 2.625 6C2.625 6.29837 2.74353 6.58452 2.9545 6.7955C3.16548 7.00647 3.45163 7.125 3.75 7.125ZM20.25 16.875H3.75C3.45163 16.875 3.16548 16.9935 2.9545 17.2045C2.74353 17.4155 2.625 17.7016 2.625 18C2.625 18.2984 2.74353 18.5845 2.9545 18.7955C3.16548 19.0065 3.45163 19.125 3.75 19.125H20.25C20.5484 19.125 20.8345 19.0065 21.0455 18.7955C21.2565 18.5845 21.375 18.2984 21.375 18C21.375 17.7016 21.2565 17.4155 21.0455 17.2045C20.8345 16.9935 20.5484 16.875 20.25 16.875Z"
+              fill="#2B2B6F" />
+          </svg>
+          <span class="hidden">toggle</span>
+        </button>
+        <!-- Brand (Logo) -->
+        <a class="items-center" href="/index.html">
+          <div class="flex items-center gap-2">
+            <img src="assets/img/logo.png" alt="" srcset="">
+          </div>
         </a>
-
-        <p id="close-banner" class="absolute top-0 right-4">
-          <img src="assets/img/close.svg" alt="" />
-        </p>
+      </div>
+      <!-- Toggler untuk menu responsif -->
+      <div class="md:hidden flex gap-3">
+        <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
       </div>
 
-      <div class="flex items-center justify-between p-5">
-        <div><img src="assets/img/logo.png" alt="" class="w-[40px]" /></div>
+      <div class="hidden md:flex md:items-center md:space-x-4">
+        <a href="index.html#hero" class="btn-text menu active" onclick="switchActiveMenu(this)">Beranda</a>
+        <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
+        <a href="index.html#kontribusi" class="btn-text menu">Kontribusi</a>
+        <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>
+        <a href="blog.html" class="btn-text menu">Blog</a>
+      </div>
+      <div class="hidden md:flex md:items-center md:ml-3">
+        <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
+      </div>
+    </div>
+    <div
+      class="hidden px-4 py-4 border-y-1  flex border-gray-200 space-y-2  items-center flex-col md:hidden md:items-center"
+      id="menu">
+      <a href="index.html#hero" class="btn-text menu active" onclick="switchActiveMenu(this)">Beranda</a>
+      <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
+      <a href="index.html#kontribusi" class="btn-text menu">Kontribusi</a>
+      <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>
+      <a href="blog.html" class="btn-text menu">Blog</a>
+    </div>
+  </nav>
+  <main class="pt-0 xl:pt-12">
+    <!-- Hero -->
+  </main>
+  <section id="hero" class="w-full  px-4 md:px-16 xl:px-32 mt-24 ">
+    <div class="isolate">
+      <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
+        <svg
+          class="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
+          viewBox="0 0 1155 678">
+          <path fill="url(#9b2541ea-d39d-499b-bd42-aeea3e93f5ff)" fill-opacity=".3"
+            d="M317.219 518.975L203.852 678 0 438.341l317.219 80.634 204.172-286.402c1.307 132.337 45.083 346.658 209.733 145.248C936.936 126.058 882.053-94.234 1031.02 41.331c119.18 108.451 130.68 295.337 121.53 375.223L855 299l21.173 362.054-558.954-142.079z" />
+          <defs>
+            <linearGradient id="9b2541ea-d39d-499b-bd42-aeea3e93f5ff" x1="1155.49" x2="-78.208" y1=".177" y2="474.645"
+              gradientUnits="userSpaceOnUse">
+              <stop stop-color="#CEE8F7"></stop>
+              <stop offset="1" stop-color="#CEE8F7"></stop>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
 
-        <div class="flex gap-2 items-center justify-center">
-          <a href="" class="button-outline">Dukungan</a>
+      <div class="relative pt-24 ">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div class="mx-auto max-w-2xl text-center">
+            <span class="text-base font-medium text-dark-blue-500">Calon Bupati Sumedang 2025-2030</span>
+            <h1 class="text-4xl font-bold text-primary-800 sm:text-6xl mt-3 text-dark-blue-500">Dony Fajar</h1>
+            <p class="mt-6 text-2xl  text-gray-600">Lanjutkan Sumedang Lebih Maju</p>
 
-          <div class="space-y-1" id="btnNav">
-            <div class="h-1 w-6 bg-dark-blue-500"></div>
-            <div class="h-1 w-6 bg-dark-blue-500"></div>
-            <div class="h-1 w-6 bg-dark-blue-500"></div>
+          </div>
+          <div class="flex items-center justify-center"> <img src="assets/img/hero.png" alt="" srcset="">
           </div>
         </div>
       </div>
-
-      <nav
-        id="nav-visible"
-        class="w-full card bg-white text-gray-500 flex-col items-center justify-center gap-4 pb-4 absolute hidden"
-      >
-        <a href="" class="nav-link-active">Beranda</a>
-        <a href="">Prestasi</a>
-        <a href="">Visi & Misi</a>
-        <a href="">Biografi</a>
-        <a href="blog.html">Berita</a>
-      </nav>
-    </header>
-
-    <footer class="p-responsive py-4 space-y-3 bg-light-blue-100">
-      <div
-        class="flex flex-col sm:flex-row gap-5 justify-center items-center w-full border-b border-gray-500 p-6"
-      >
-        <div class="min-w-[100px] flex justify-center sm:hidden mb-4">
-          <img src="assets/img/logo.png" alt="" />
-        </div>
-
-        <div
-          class="flex flex-col sm:flex-row gap-3 items-center justify-center text-center sm:text-start"
-        >
-          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
-            <img src="assets/img/pp-dony.png" alt="" />
+    </div>
+  </section>
+  <section id="visi-misi" class="px-4 md:px-16 xl:px-32 bg-light-blue-500 min-h-dvh">
+    <div class="mx-auto py-28">
+      <div class="flex flex-row items-start gap-12">
+        <img src="assets/img/hero.png" alt="" class="w-1/2 hidden xl:block sticky top-0 pt-24">
+        <div class="flex flex-col w-full xl:w-1/2 gap-24 2xl:gap-28 2xl:w-2/5 pt-80 pb-32">
+          <div id="card-1" class="card-large opacity-100 transition-opacity">
+            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
+            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">1. MAJU</h4>
+            <h6 class="text-base text-wrap text-gray-600">
+              MAJU bermakna tahun 2045 memiliki sumber daya manusia yang berdaya, tangguh, inovatif, memiliki kompetensi
+              dan daya saing pada skala regional, nasional dan global, didukung kapasitas penguasaan ilmu pengatahuan
+              dan teknologi.
+            </h6>
           </div>
+          <div id="card-2" class="card-large opacity-50 transition-opacity">
+            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
+            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">2. AGAMIS</h4>
+            <h6 class="text-base text-wrap text-gray-600">
+              AGAMIS bermakna tahun 2045 ditandai dengan kondisi lingkungan kehidupan sosial yang makin dijiwai oleh
+              keimanan dan ketakwaan terhadap Tuhan Yang Maha Kuasa sesuai keyakinan masyarakat.
+            </h6>
+          </div>
+          <div id="card-3" class="card-large opacity-50 transition-opacity">
+            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
+            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">3. MANDIRI</h4>
+            <h6 class="text-base text-wrap text-gray-600">
+              MANDIRI merupakan wujud Kabupaten Sumedang pada tahun 2045 yang mampu memanfaatkan potensi sumber daya
+              manusia, sumber daya alam, dan sumber daya lainnya secara optimal.
+            </h6>
+          </div>
+          <div id="card-4" class="card-large opacity-50 transition-opacity">
+            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
+            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">4. ADIL</h4>
+            <h6 class="text-base text-wrap text-gray-600">
+              ADIL bermakna memastikan bahwa pembangunan harus merata, seimbang dan berkeadilan antara penguatan dan
+              pembanguan sumber daya manusia dengan pembangunan ekonomi dan pemerataan infrastruktur dan fasilitas
+              layanan publik disetiap wilayah.
+            </h6>
+          </div>
+          <div id="card-5" class="card-large opacity-50 transition-opacity">
+            <h2 class="text-4xl font-semibold text-dark-blue-900">Visi</h2>
+            <h4 class="text-2xl font-semibold mt-6 text-dark-blue-900">5. BERKELANJUTAN</h4>
+            <h6 class="text-base text-wrap text-gray-600">
+              BERKELANJUTAN memiliki arti menjamin kelestarian sumber daya alam dan kualitas lingkungan hidup dengan
+              tata kelola yang baik dalam jangka panjang. Keberlanjutan sumber daya alam dan lingkungan hidup bertujuan
+              untuk melindungi dan menjaga keberlanjutan ekosistem dalam konteks lokal dan global serta kesejahteraan
+              makhluk hidup yang ada di dalamnya.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="misi" class="w-full h-fit px-4 md:px-16 xl:px-32 py-20">
+    <div class="flex flex-col text-center">
+      <h2 class="text-4xl font-medium text-dark-blue-900">Misi</h2>
+      <p class="text-xl text-gray-700 mt-1">Berikut Misi Dony & Fajar</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-12">
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">01</h2>
+        <p class="text-base text-gray-600 mt-8">Mewujudkan nilai-nilai religius, taat hukum dan demokratis untuk
+          menciptakan
+          generasi emas yang produktif,
+          unggul
+          dan maju.</p>
+      </div>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">02</h2>
+        <p class="text-base text-gray-600 mt-8">Meningkatkan kualitas kinerja aparatur melalui penguatan tata kelola
+          pemerintahan yang jujur, akuntabel, bebas korupsi dan inovatif berbasis teknologi digital.</p>
+      </div>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">03</h2>
+        <p class="text-base text-gray-600 mt-8">Mempercepat pembangunan infrastruktur layanan dasar, pengembangan
+          wilayah dan pembangunan kawasan industri guna meningkatkan pertumbuhan ekonomi.</p>
+      </div>
 
-          <div class="space-y-1">
-            <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">04</h2>
+        <p class="text-base text-gray-600 mt-8">Memperluas kesempatan kerja dan penambahan keterampilan bagi generasi
+          muda untuk mengatasi pengangguran dan pengentasan kemiskinan.</p>
+      </div>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">05</h2>
+        <p class="text-base text-gray-600 mt-8">Meningkatkan produktifitas pertanian, merevitalisasi irigasi, mendukung
+          mekanisasi dan alat mesin pertanian serta sarana produksi pertanian guna mewujudkan ketahanan pangan dan
+          kesejahteraan petani sebagai wujud implementasi reforma agraria.</p>
+      </div>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">06</h2>
+        <p class="text-base text-gray-600 mt-8">Mempercepat pembangunan sektor industri dan perdagangan guna
+          meningkatkan pendapatan pelaku usaha melalui revitalisasi pasar tradisional, pembangunan pasar induk,
+          fasilitasi bantuan teknologi produksi dan pemasaran serta permodalan.</p>
+      </div>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">07</h2>
+        <p class="text-base text-gray-600 mt-8">Peningkatan bantuan keuangan desa yang merata serta mengoptimalkan
+          insentif bagi RT/RW, PKK, BPD, Guru Ngaji, Guru Honorer, Guru PAUD, Da’i-Da’iyah, Kader Posyandu, Linmas,
+          bantuan pesantren dan masjid serta apresiasi yang berprestasi.</p>
+      </div>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">08</h2>
+        <p class="text-base text-gray-600 mt-8">Meningkatkan efektivitas program inklusif pemberdayaan perempuan,
+          perlindungan anak, ibu hamil dan mendorong terbentuknya pelayanan lansia (Geriatri), serta aksesibilitas bagi
+          penyandang disabilitas.</p>
+      </div>
+      <div class="flex flex-col bg-light-blue-500 p-6 rounded-xl">
+        <h2 class="text-2xl text-dark-blue-900 ">09</h2>
+        <p class="text-base text-gray-600 mt-8">Memperkuat peran pelaku seni budaya, kelompok kreatif dan komunitas
+          seni tradisi serta mendorong pengembangan sektor pariwisata berbasis kekayaan alam dan kebudayaan dalam
+          rangka implementasi SPBS (Sumedang Puseur Budaya Sunda).</p>
+      </div>
+    </div>
+  </div>
+  <section id="kontribusi" class="bg-dark-blue-500 px-4 md:px-16 xl:px-32 min-h-dvh py-20">
+    <div class="flex flex-col md:flex-row justify-between">
+      <div class="flex flex-col ">
+        <h2 class="text-4xl font-medium text-white">Kontribusi</h2>
+        <p class="text-xl text-gray-50 mt-1">Kontribusi Pa Dony Untuk Sumedang</p>
+      </div>
+      <a href="blog.html" target="_blank" rel="noopener noreferrer" class="button-outline mt-4 md:mt-0">Selengkapnya</a>
+    </div>
+    <div class="flex flex-row gap-2 overflow-x-auto whitespace-nowrap scroll-smooth snap-x max-w-full mt-12">
+      <!-- card 1 -->
+      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl text-gray-400">01</h2>
+          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover">
+        </div>
+        <div class="flex  flex-col">
+          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
+          <p class="text-gray-600 text-wrap">Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan
+            angka
+            kemiskinan
+            ekstrem menjadi 0,53% dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.</p>
+        </div>
+      </div>
 
-            <p class="font-medium text-dark-blue-500 mb-2">
-              Dr. Dony Ahmad Munir, S.T., M.M.
-            </p>
+      <!-- card 2 -->
+      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl text-gray-400">02</h2>
+          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover">
+        </div>
+        <div class="flex  flex-col">
+          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
+          <p class="text-gray-600 text-wrap">Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan
+            angka
+            kemiskinan
+            ekstrem menjadi 0,53% dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.</p>
+        </div>
+      </div>
 
-            <div class="flex justify-center sm:justify-start gap-2">
-              <a href="#">
-                <img src="assets/img/facebook.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/img/instagram.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/img/twitter.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/img/youtube.svg" alt="" />
-              </a>
+      <!-- card 3 -->
+      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl text-gray-400">03</h2>
+          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover">
+        </div>
+        <div class="flex  flex-col">
+          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
+          <p class="text-gray-600 text-wrap">Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan
+            angka
+            kemiskinan
+            ekstrem menjadi 0,53% dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.</p>
+        </div>
+      </div>
 
-              <a href="#">
-                <img src="assets/img/tiktok.svg" alt="" />
-              </a>
+      <!-- card 4 -->
+      <div class="flex flex-col rounded-xl bg-white p-6 min-w-[600px] snap-start">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl text-gray-400">04</h2>
+          <img src="assets/img/stunting.png" alt="" srcset="" class="h-60 w-auto object-cover">
+        </div>
+        <div class="flex  flex-col">
+          <h3 class="text-2xl text-dark-blue-900">Pencegahan Stunting</h3>
+          <p class="text-gray-600 text-wrap">Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan
+            angka
+            kemiskinan
+            ekstrem menjadi 0,53% dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="assets" class="px-4 md:px-16 xl:px-32 py-20">
+    <div class="flex flex-col items-center">
+      <div class="flex flex-col text-center">
+        <h2 class="text-4xl font-medium text-dark-blue-900">Asset Kampanye</h2>
+        <p class="text-xl text-gray-700 mt-1">Silahkan unduh asset kampanye untuk mendukung Dony & Fajar</p>
+      </div>
+      <!-- Swiper -->
+      <div class="w-full max-w-4xl mt-12">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img class="w-full h-[480px] object-cover rounded-xl" src="assets/img/slide-1.png" alt="Nature Image 1">
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img class="w-full h-[480px] object-cover rounded-xl" src="assets/img/slide-2.png" alt="Nature Image 2">
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <img class="w-full h-[480px] object-cover rounded-xl" src="assets/img/slide-3.png" alt="Nature Image 3">
             </div>
           </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+      <a href="https://drive.google.com/drive/folders/1nxvx8cy0IR4MUUNT6rto4WrIn0yvhWSj?usp=sharing" target="_blank"
+        rel="noopener noreferrer" class="button-outline mt-12 ">Download</a>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="text-base  bg-light-blue-100 px-4 md:px-16 xl:px-32 py-12">
+    <div class="flex flex-col sm:flex-row gap-5 justify-between items-center w-full border-b border-gray-500 py-6">
+      <div class="min-w-[100px] flex justify-center sm:hidden mb-4">
+        <img src="assets/img/logo.png" alt="" />
+      </div>
+
+      <div class="flex flex-col sm:flex-row gap-3 items-center justify-center text-center sm:text-start">
+        <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]  flex ">
+          <img src="assets/img/pp-dony.png" alt="" />
         </div>
 
-        <div class="min-w-[100px] justify-center hidden sm:block">
-          <img src="assets/img/logo.png" alt="" />
-        </div>
+        <div class="space-y-1">
+          <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
 
-        <div
-          class="flex flex-col sm:flex-row-reverse gap-3 items-center justify-center text-center sm:text-end"
-        >
-          <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
-            <img src="assets/img/pp-fajar.png" alt="" />
-          </div>
+          <p class="font-medium text-dark-blue-500 mb-2">
+            Dr. Dony Ahmad Munir, S.T., M.M.
+          </p>
 
-          <div class="space-y-1">
-            <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
+          <div class="flex justify-center sm:justify-start gap-2">
+            <a href="#">
+              <img src="assets/img/facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/img/instagram.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/img/twitter.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/img/youtube.svg" alt="" />
+            </a>
 
-            <p class="font-medium text-dark-blue-500 mb-2">
-              Dr. Dony Ahmad Munir, S.T., M.M.
-            </p>
-
-            <div class="flex justify-center sm:justify-end gap-2 min-w-full">
-              <a href="#">
-                <img src="assets/img/facebook.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/img/instagram.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/img/twitter.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/img/youtube.svg" alt="" />
-              </a>
-
-              <a href="#">
-                <img src="assets/img/tiktok.svg" alt="" />
-              </a>
-            </div>
+            <a href="#">
+              <img src="assets/img/tiktok.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
 
-      <p class="text-center text-black text-sm">©2024 DonyFajar</p>
-    </footer>
+      <div class="min-w-[100px]justify-center hidden sm:block">
+        <img src="assets/img/logo.png" alt="" />
+      </div>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+      <div class="flex flex-col sm:flex-row-reverse gap-3 items-center justify-center text-center sm:text-end">
+        <div class="max-w-[99px] min-h-[99px] min-w-[99px] h-[99px]">
+          <img src="assets/img/pp-fajar.png" alt="" />
+        </div>
+
+        <div class="space-y-1">
+          <p class="text-xs font-medium text-dark-blue-500">Ikuti</p>
+
+          <p class="font-medium text-dark-blue-500 mb-2">
+            Dr. Dony Ahmad Munir, S.T., M.M.
+          </p>
+
+          <div class="flex justify-center sm:justify-end gap-2 min-w-full">
+            <a href="#">
+              <img src="assets/img/facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/img/instagram.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/img/twitter.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/img/youtube.svg" alt="" />
+            </a>
+
+            <a href="#">
+              <img src="assets/img/tiktok.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center mt-2 text-black text-sm">©2024 DonyFajar</p>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Navbar -->
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menu");
+      if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+      } else {
+        menu.classList.add("hidden");
+      }
+    }
+
+    // Fungsi untuk menyembunyikan menu ketika mengklik atau fokus di luar menu
+    document.addEventListener("click", function (event) {
+      var nav = document.getElementById("nav");
+      var targetElement = event.target;
+
+      // Periksa apakah targetElement berada di dalam menu atau tidak
+      var isClickInsideMenu = nav.contains(targetElement);
+
+      // Jika tidak, maka sembunyikan menu
+      if (!isClickInsideMenu) {
+        menu.classList.add("hidden");
+      }
+    });
+
+    function switchActiveMenu(currentMenu) {
+      var menu = document.getElementsByClassName("menu");
+      for (var i = 0; i < menu.length; i++) {
+        menu[i].classList.remove("active");
+      }
+      currentMenu.classList.add("active");
+
+      var nav = document.getElementById("menu");
+      nav.classList.add("hidden");
+    }
+  </script>
+  <!-- Scroll Active -->
+  <script>
+    function changeActiveWhenScroll() {
+      var scrollPosition = window.scrollY;
+      var menu = document.getElementsByClassName("menu");
+      var section = document.getElementsByTagName("section");
+      for (var i = 0; i < section.length; i++) {
+        var sectionTop = section[i].offsetTop;
+        var sectionBottom = sectionTop +
+          section[i].offsetHeight;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+          for (var j = 0; j < menu.length; j++) {
+            menu[j].classList.remove("active");
+          }
+          menu[i].classList.add("active");
+        }
+      }
+    }
+    document.addEventListener("scroll", changeActiveWhenScroll);
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      // Enable autoplay
+      autoplay: {
+        delay: 3000, // Delay between slides in milliseconds
+        disableOnInteraction: false, // Keep autoplay running when interaction happens
+      },
+      // Pagination with dynamic bullets
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+        clickable: true,
+      },
+      loop: true, // Loop the slides
+    });
+  </script>
+  <!-- Sticky Slider -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card-large');
+
+      window.addEventListener('scroll', () => {
+        const windowHeight = window.innerHeight;
+        const centerY = window.scrollY + windowHeight / 2;
+
+        cards.forEach(card => {
+          const cardRect = card.getBoundingClientRect();
+          const cardCenterY = cardRect.top + window.scrollY + cardRect.height / 2;
+
+          if (Math.abs(cardCenterY - centerY) < windowHeight / 4) {
+            card.style.opacity = '1';
+          } else {
+            card.style.opacity = '0.5';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
 </html>
