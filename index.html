@@ -15,6 +15,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet" />
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
@@ -117,15 +119,17 @@
       </div>
     </div>
     <div class="absolute inset-0 flex flex-col justify-center items-center text-center -mt-44  z-10">
-      <p class="text-white text-lg lg:text-2xl mb-4">
+      <p data-aos="fade-up" data-aos-delay="400" class="text-white text-lg lg:text-2xl mb-4">
         Calon Bupati & Wakil Bupati Sumedang 2025-2030
       </p>
-      <h1 class="text-white text-6xl sm:text-[10vw] font-extrabold uppercase ">DONY FAJAR</h1>
+      <h1 data-aos="fade-up" data-aos-duration="300"
+        class="text-white text-6xl sm:text-[10vw] font-extrabold uppercase ">DONY FAJAR</h1>
 
     </div>
 
 
-    <div class="absolute bottom-0 w-full z-20 flex justify-center overflow-clip -mb-12">
+    <div data-aos="fade-up" data-aos-delay="200"
+      class="absolute bottom-0 w-full z-20 flex justify-center overflow-clip -mb-12">
       <img src="assets/img/hero.png" alt="hero" class="max-w-screen-sm 2xl:max-w-screen-lg object-cover">
     </div>
 
@@ -133,11 +137,11 @@
   <section id="visi-misi" class="px-4 md:px-16 xl:px-32 bg-light-blue-500 min-h-dvh">
     <div class="mx-auto py-20">
       <div class="flex flex-row items-start gap-12">
-        <div class="w-1/2 hidden xl:flex sticky top-0 pt-[15%] xl:flex-col xl:items-center mt-2 ">
+        <div data-aos="fade-up" class="w-1/2 hidden xl:flex sticky top-0 pt-[15%] xl:flex-col xl:items-center mt-2 ">
           <img src="assets/img/visi.png" alt="">
         </div>
 
-        <div class="flex flex-col w-full xl:w-1/2 gap-8 2xl:gap-20 2xl:w-2/5 xl:pt-80 pb-32">
+        <div data-aos="fade-up" class="flex flex-col w-full xl:w-1/2 gap-8 2xl:gap-20 2xl:w-2/5 xl:pt-80 pb-32">
           <h2 class=" text-4xl font-bold text-dark-blue-900 -mb-12">Visi</h2>
           <div id="card-1" class="card-large opacity-100 transition-opacity">
             <h4 class="text-2xl font-semibold text-dark-blue-900">1. MAJU</h4>
@@ -183,11 +187,11 @@
     </div>
   </section>
   <div id="misi" class="w-full h-fit px-4 md:px-16 xl:px-32 py-20">
-    <div class="flex flex-col text-center">
+    <div data-aos="fade-up" data-aos-delay="150" class="flex flex-col text-center">
       <h2 class="text-4xl font-bold text-dark-blue-900">Misi</h2>
       <p class="text-xl text-gray-700 mt-1">Berikut Misi Dony & Fajar</p>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-12 ">
+    <div data-aos="fade-up" data-aos-delay="200" class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-12 ">
       <div class="flex flex-col bg-white effect p-6 rounded-xl lg:col-span-2">
         <div class="flex flex-row justify-between items-start">
           <svg width="64" height="64" viewBox="0 0 64 64" fill="" xmlns="http://www.w3.org/2000/svg">
@@ -517,8 +521,6 @@
             </svg>
           </button>
         </div>
-
-
         <h2 class="text-2xl text-dark-blue-900 mt-8">08</h2>
         <p class="text-base text-gray-600 ">Meningkatkan efektivitas program inklusif pemberdayaan perempuan,
           perlindungan anak, ibu hamil dan mendorong terbentuknya pelayanan lansia (Geriatri), serta aksesibilitas bagi
@@ -618,17 +620,18 @@
   </div>
   </div>
   <section id="kontribusi" class="bg-light-blue-500 px-4 md:px-16 xl:px-32 h-fit py-20">
-    <div class="flex flex-col md:flex-row justify-between">
+    <div data-aos="fade-up" data-aos-delay="150" class="flex flex-col md:flex-row justify-between">
       <div class="flex flex-col ">
         <h2 class="text-4xl font-bold text-dark-blue-800">Kontribusi</h2>
         <p class="text-xl text-gray-700 mt-1">Kontribusi Pa Dony Untuk Sumedang</p>
       </div>
       <a href="blog.html" target="_blank" rel="noopener noreferrer" class="button-outline mt-4 md:mt-0">Selengkapnya</a>
     </div>
-    <div class="flex flex-row gap-3 no-scroll overflow-x-auto scroll-smooth snap-x max-w-full mt-12">
+    <div data-aos="fade-up" data-aos-delay="150"
+      class="flex flex-row gap-3 no-scroll overflow-x-auto scroll-smooth snap-x max-w-full mt-12">
       <!-- card 1 -->
-      <div
-        class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden card">
+      <div data-aos="fade-up" data-aos-delay="150"
+        class="flex flex-col rounded-xl bg-white p-6 w-[340px] xl:w-[600px] snap-start shrink-0 overflow-hidden effect">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">01</h2>
           <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
@@ -643,33 +646,66 @@
       </div>
 
       <!-- card 2 -->
-      <div
-        class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden card">
+      <div data-aos="fade-up" data-aos-delay="250" class=" flex flex-col rounded-xl bg-white p-6 w-[340px] xl:w-[600px] snap-start shrink-0 overflow-hidden
+        effect">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">02</h2>
-          <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
+          <img src="assets/img/ketenagakerjaan.png" alt="" class="h-60 w-full object-cover rounded-lg">
         </div>
         <div class="flex flex-col w-full">
-          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Pencegahan Stunting dan Kemiskinan</h3>
+          <h3 class=" text-2xl font-medium text-dark-blue-900 mt-4">
+            Ketenagakerjaan</h3>
           <p class="text-gray-600 mt-2 break-words whitespace-normal">
-            Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan angka kemiskinan ekstrem menjadi 0,53%
-            dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.
+            Pengangguran turun menjadi 6,94% dengan program bursa modal, job fair, dan pelatihan tenaga kerja, termasuk
+            kerjasama internasional dengan Jepang.
           </p>
         </div>
       </div>
 
       <!-- card 3 -->
-      <div
-        class="flex flex-col rounded-xl bg-white p-6 w-[380px] xl:w-[600px] snap-start shrink-0 overflow-hidden card">
+      <div data-aos="fade-up" data-aos-delay="300"
+        class="flex flex-col rounded-xl bg-white p-6 w-[340px] xl:w-[600px] snap-start shrink-0 overflow-hidden effect">
         <div class="flex flex-col gap-4">
           <h2 class="text-4xl text-gray-400">03</h2>
-          <img src="assets/img/stunting.png" alt="" class="h-60 w-full object-cover rounded-lg">
+          <img src="assets/img/inovasi.png" alt="" class="h-60 w-full object-cover rounded-lg">
         </div>
         <div class="flex flex-col w-full">
-          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Pencegahan Stunting dan Pembangunan</h3>
+          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Inovasi Layanan Publik</h3>
           <p class="text-gray-600 mt-2 break-words whitespace-normal">
-            Gerakan bersama melawan kemiskinan dan stunting berhasil menurunkan angka kemiskinan ekstrem menjadi 0,53%
-            dan meluncurkan aplikasi SINURMI untuk memantau kesehatan ibu hamil.
+            Layanan publik ditingkatkan dengan aplikasi digital, Sumedang juga meraih penghargaan keterbukaan informasi
+            dan
+            manajemen aset.
+          </p>
+        </div>
+      </div>
+
+      <!-- card 4 -->
+      <div data-aos="fade-up" data-aos-delay="350"
+        class="flex flex-col rounded-xl bg-white p-6 w-[340px] xl:w-[600px] snap-start shrink-0 overflow-hidden effect">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl text-gray-400">04</h2>
+          <img src="assets/img/kerjasama.png" alt="" class="h-60 w-full object-cover rounded-lg">
+        </div>
+        <div class="flex flex-col w-full">
+          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Kerjasama Internasional</h3>
+          <p class="text-gray-600 mt-2 break-words whitespace-normal">
+            Sumedang menarik investasi dari Tiongkok untuk kawasan Industrialpolis dan bekerja sama dengan Finlandia
+            dalam teknologi pemantauan pergerakan tanah.
+          </p>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div data-aos="fade-up" data-aos-delay="400"
+        class="flex flex-col rounded-xl bg-white p-6 w-[340px] xl:w-[600px] snap-start shrink-0 overflow-hidden effect">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-4xl text-gray-400">05</h2>
+          <img src="assets/img/vaksin.png" alt="" class="h-60 w-full object-cover rounded-lg">
+        </div>
+        <div class="flex flex-col w-full">
+          <h3 class="text-2xl font-medium text-dark-blue-900 mt-4">Penanganan Covid-19</h3>
+          <p class="text-gray-600 mt-2 break-words whitespace-normal">
+            Sumedang menjadi model percepatan vaksinasi dan memberikan bantuan sosial serta relaksasi pajak untuk
+            mendukung pelaku usaha terdampak pandemi.
           </p>
         </div>
       </div>
@@ -678,7 +714,7 @@
   </section>
   <section id="assets" class="px-4 md:px-16 xl:px-32 py-20">
     <div class="flex flex-col items-center">
-      <div class="flex flex-col text-center">
+      <div data-aos="fade-up" data-aos-delay="50" class="flex flex-col text-center">
         <h2 class="text-4xl font-bold text-dark-blue-900">
           Asset Kampanye
         </h2>
@@ -688,7 +724,7 @@
       </div>
       <!-- Swiper -->
       <div class="w-full max-w-4xl mt-12">
-        <div class="swiper mySwiper">
+        <div data-aos="zoom-in" data-aos-delay="150" class="swiper mySwiper">
           <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
@@ -717,14 +753,14 @@
   <div class="bg-dark-blue-500 max-w-[100vw] pt-4">
     <div class="flex flex-col w-full mx-auto sm:grid sm:grid-cols-2 sm:w-4/5">
       <div class="flex flex-col justify-center px-10 py-10 space-y-6 sm:max-h-[350px]">
-        <h1 class="text-white text-xl sm:text-[38px] font-bold w-full leading-tight ">Main
+        <h1 data-aos="fade-up" class="text-white text-xl sm:text-[38px] font-bold w-full leading-tight ">Main
           Game Dony Fajar Yuk!</h1>
-        <p data-aos="fade-right" data-aos-delay="200" class="text-base text-white ">Dapatkan
-          hadiah menarik, dengan hadiah utama iPhone 14.</p><a data-aos="fade-right" data-aos-delay="300"
+        <p data-aos="fade-up" data-aos-delay="100" class="text-base text-white ">Dapatkan
+          hadiah menarik, dengan hadiah utama iPhone 14.</p><a data-aos="fade-up" data-aos-delay="300"
           href="https://game.donyfajar.com/" target="_blank" rel="noopener noreferrer" class="button-outline">Main
           Sekarang</a>
       </div>
-      <div class="flex flex-col justify-end sm:max-h-[350px] sm:px-0 px-4"><img data-aos="zoom-out" data-aos-delay="100"
+      <div class="flex flex-col justify-end sm:max-h-[350px] sm:px-0 px-4"><img data-aos="fade-up" data-aos-delay="50"
           src="/assets/img/cta.png" alt="game" title="game"
           class="object-contain object-bottom h-full sm:object-right "></div>
     </div>
@@ -1110,6 +1146,7 @@
       nav.classList.add("hidden");
     }
   </script>
+
   <!-- Scroll Active -->
   <script>
     function changeActiveWhenScroll() {
@@ -1128,6 +1165,12 @@
       }
     }
     document.addEventListener("scroll", changeActiveWhenScroll);
+  </script>
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
   </script>
 
   <!-- JavaScript for Modals -->

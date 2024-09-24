@@ -50,6 +50,7 @@
 .effect{
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.06);
     border: 1px solid #f3f4f6;
+    @apply hover:scale-105 transition ease-in-out duration-150;
 }
   .label {
     @apply py-1 px-2 rounded-lg bg-gray-100 text-gray-800;
