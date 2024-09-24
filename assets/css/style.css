@@ -1223,8 +1223,8 @@ html {
   max-width: none;
 }
 
-.max-w-screen-sm {
-  max-width: 640px;
+.max-w-screen-md {
+  max-width: 768px;
 }
 
 .flex-1 {
@@ -2766,8 +2766,8 @@ html {
   line-height: 1;
 }
 
-.text-6xl {
-  font-size: 3.75rem;
+.text-8xl {
+  font-size: 6rem;
   line-height: 1;
 }
 
@@ -3516,17 +3516,6 @@ html {
 .effect{
   box-shadow: 0 5px 40px 0 rgba(0, 0, 0, 0.06);
   border: 1px solid #f3f4f6;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-  transition-duration: 150ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.effect:hover {
-  --tw-scale-x: 1.05;
-  --tw-scale-y: 1.05;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .label {
@@ -3785,10 +3774,6 @@ html {
     line-height: 1;
   }
 
-  .sm\:text-\[10vw\] {
-    font-size: 10vw;
-  }
-
   .sm\:text-\[38px\] {
     font-size: 38px;
   }
@@ -3801,6 +3786,10 @@ html {
 @media (min-width: 768px) {
   .md\:-mt-px {
     margin-top: -1px;
+  }
+
+  .md\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .md\:ml-3 {
@@ -3860,6 +3849,15 @@ html {
     padding-right: 24px;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-\[180px\] {
+    font-size: 180px;
+  }
+
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
@@ -3869,6 +3867,10 @@ html {
 @media (min-width: 1024px) {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:-mb-12 {
+    margin-bottom: -3rem;
   }
 
   .lg\:grid-cols-3 {
@@ -3932,9 +3934,17 @@ html {
   .xl\:pt-80 {
     padding-top: 20rem;
   }
+
+  .xl\:text-\[10vw\] {
+    font-size: 10vw;
+  }
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:-mb-12 {
+    margin-bottom: -3rem;
+  }
+
   .\32xl\:w-2\/5 {
     width: 40%;
   }
