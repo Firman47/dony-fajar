@@ -49,6 +49,8 @@
           >
         </div>
         <button id="close-banner" class="absolute right-6">
+          <span class="sr-only">Icon Button</span>
+
           <svg
             width="24"
             height="24"
@@ -66,7 +68,7 @@
       <div
         class="px-4 py-4 md:px-[24px] lg:px-[120px] flex justify-between items-center"
       >
-        <div class="flex gap-3">
+        <div class="flex gap-3 bg">
           <!-- Brand (Logo) -->
           <a class="items-center" href="/index.html">
             <div class="flex items-center gap-2">
@@ -74,8 +76,9 @@
             </div>
           </a>
         </div>
-        <div class="flex gap-3">
-          <div class="md:hidden flex gap-3">
+
+        <div class="md:hidden flex gap-3">
+          <div class="flex gap-3">
             <a
               href="agenda.html"
               rel="noopener noreferrer"
@@ -85,7 +88,7 @@
           </div>
           <button
             type="button"
-            class="md:hidden text-gray-600 focus:outline-none"
+            class="text-gray-600 focus:outline-none"
             data-target="#menu"
             onclick="toggleMenu()"
           >
@@ -98,6 +101,7 @@
             <span class="hidden">toggle</span>
           </button>
         </div>
+
         <div class="hidden md:flex md:items-center md:space-x-4">
           <a href="index.html#hero" class="btn-text menu">Beranda</a>
           <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
@@ -105,6 +109,7 @@
           <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>
           <a href="blog.html" class="btn-text menu active">Blog</a>
         </div>
+
         <div class="hidden md:flex md:items-center md:ml-3">
           <a href="agenda.html" rel="noopener noreferrer" class="button-outline"
             >Lihat Agenda</a
@@ -122,6 +127,7 @@
         <a href="blog.html" class="btn-text menu">Blog</a>
       </div>
     </nav>
+
     <main class="pt-16">
       <section id="blog" class="w-full py-20">
         <!-- content header -->
@@ -143,110 +149,122 @@
               Berita Terbaru
             </h2>
 
-            <div class="flex flex-col md:flex-row gap-8 w-full">
-              <div class="card rounded-2xl w-full md:w-1/2 space-y-4 bg-white">
-                <img
-                  src="assets/img/blog1.jpg"
-                  alt=""
-                  class="aspect-video w-full rounded-md"
-                />
-                <div class="">
-                  <p class="p space-x-2">
-                    <span class="label hidden sm:inline-block">Informasi</span>
-                    <span class="text-base text-gray-600">19 Sep 24</span>
-                  </p>
-
-                  <h3
-                    class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
+            <div class="flex flex-col lg:flex-row gap-8 w-full">
+              <div clas="w-full lg:w-1/2">
+                <a href="d-blog1.html">
+                  <div
+                    class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
                   >
-                    Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                  </h3>
-
-                  <p
-                    class="text-base text-gray-600 line-clamp-2 sm:line-clamp-3 mt-1"
-                  >
-                    Kabupaten Sumedang selama 5 tahun, 2028-2023, dipimpin
-                    Bupati Dony Ahmad Munir mengalami perubahan yang cepat di
-                    berbagai bidang. Menjadi rujukan nasional, semakin dikenal
-                    dan meraih berbagai penghargaan atas inovasi dalam
-                    penyelenggaraan pemerintahan. Pemerintahan daerah, lembaga
-                    se-Indonesia berdatangan silih berganti untuk belajar kepada
-                    Sumedang dalam transformasi digital.
-                  </p>
-                </div>
+                    <div class="shrink-0">
+                      <img
+                        alt=""
+                        class="h-48 w-full object-cover"
+                        src="assets/img/blog1.jpg"
+                      />
+                    </div>
+                    <div class="p-5">
+                      <p class="text-base space-x-2 mb-2">
+                        <span class="label">Informasi</span>
+                        <span class="text-base text-gray-600">19 Sep 24</span>
+                      </p>
+                      <p
+                        class="text-xl font-semibold text-gray-900 line-clamp-2"
+                      >
+                        Melanjutkan Kebaikan untuk Sumedang Semakin Maju
+                        Kabupaten
+                      </p>
+                      <p
+                        class="mt-3 text-base text-gray-500 line-clamp-3 md:line-clamp-4"
+                      >
+                        Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony
+                        Ahmad Munir mengalami perubahan yang cepat di berbagai
+                        bidang. Menjadi rujukan nasional, semakin dikenal dan
+                        meraih berbagai penghargaan atas inovasi dalam
+                        penyelenggaraan pemerintahan. Pemerintahan daerah,
+                        lembaga se-Indonesia berdatangan silih berganti untuk
+                        belajar kepada Sumedang dalam transformasi digital.
+                      </p>
+                    </div>
+                  </div>
+                </a>
               </div>
 
-              <div class="flex flex-col gap-2 w-full md:w-1/2">
-                <!-- card pertama -->
+              <div class="flex flex-col gap-4 w-full lg:w-1/2">
+                <a href="d-blog2.html">
+                  <div
+                    class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl"
+                  >
+                    <div class="md:flex">
+                      <div class="md:shrink-0">
+                        <img
+                          alt=""
+                          class="h-48 w-full object-cover md:h-full md:w-48"
+                          src="assets/img/blog2.jpg"
+                        />
+                      </div>
+                      <div class="p-5 md:p-4">
+                        <p class="text-base space-x-2 mb-2">
+                          <span class="label">Informasi</span>
+                          <span class="text-base text-gray-600">19 Sep 24</span>
+                        </p>
+                        <p
+                          class="text-xl font-semibold text-gray-900 line-clamp-1"
+                        >
+                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
+                          Kabupaten
+                        </p>
+                        <p class="mt-3 text-base text-gray-500 line-clamp-2">
+                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
+                          Dony Ahmad Munir mengalami perubahan yang cepat di
+                          berbagai bidang. Menjadi rujukan nasional, semakin
+                          dikenal dan meraih berbagai penghargaan atas inovasi
+                          dalam penyelenggaraan pemerintahan. Pemerintahan
+                          daerah, lembaga se-Indonesia berdatangan silih
+                          berganti untuk belajar kepada Sumedang dalam
+                          transformasi digital.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
 
                 <a href="d-blog1.html">
-                  <div class="card rounded-lg flex gap-4 h-fit bg-white">
-                    <div class="max-w-[114px] rounded overflow-hidden">
-                      <img
-                        src="assets/img/blog1.jpg"
-                        alt="Image"
-                        class="object-cover w-full h-full"
-                      />
-                    </div>
-
-                    <div class="">
-                      <p class="p space-x-2">
-                        <span class="label hidden sm:inline-block"
-                          >Informasi</span
+                  <div
+                    class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
+                  >
+                    <div class="md:flex">
+                      <div class="md:shrink-0">
+                        <img
+                          alt=""
+                          class="h-48 w-full object-cover md:h-full md:w-48"
+                          src="assets/img/blog1.jpg"
+                        />
+                      </div>
+                      <div class="p-5 md:p-4">
+                        <p class="text-base space-x-2 mb-2">
+                          <span class="label">Informasi</span>
+                          <span class="text-base text-gray-600">19 Sep 24</span>
+                        </p>
+                        <p
+                          class="text-xl font-semibold text-gray-900 line-clamp-1"
                         >
-                        <span class="text-base text-gray-600">19 Sep 24</span>
-                      </p>
-
-                      <h3
-                        class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
-                      >
-                        Muda Teruji Terbukti
-                      </h3>
-
-                      <p
-                        class="text-base text-gray-600 line-clamp-1 sm:line-clamp-3 mt-1"
-                      >
-                        Bupati Sumedang 2018-2023 Dony Ahmad Munir...
-                      </p>
+                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
+                          Kabupaten
+                        </p>
+                        <p class="mt-3 text-base text-gray-500 line-clamp-2">
+                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
+                          Dony Ahmad Munir mengalami perubahan yang cepat di
+                          berbagai bidang. Menjadi rujukan nasional, semakin
+                          dikenal dan meraih berbagai penghargaan atas inovasi
+                          dalam penyelenggaraan pemerintahan. Pemerintahan
+                          daerah, lembaga se-Indonesia berdatangan silih
+                          berganti untuk belajar kepada Sumedang dalam
+                          transformasi digital.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </a>
-                <!-- card pertama -->
-
-                <!-- card kedua -->
-                <a href="d-blog2.html">
-                  <div class="card rounded-lg flex gap-4 h-fit bg-white">
-                    <div class="max-w-[114px] rounded overflow-hidden">
-                      <img
-                        src="assets/img/blog2.jpg"
-                        alt="Image"
-                        class="object-cover w-full h-full"
-                      />
-                    </div>
-
-                    <div class="">
-                      <p class="p space-x-2">
-                        <span class="label hidden sm:inline-block"
-                          >Informasi</span
-                        >
-                        <span class="text-base text-gray-600">19 Sep 24</span>
-                      </p>
-
-                      <h3
-                        class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
-                      >
-                        Muda Teruji Terbukti
-                      </h3>
-
-                      <p
-                        class="text-base text-gray-600 line-clamp-1 sm:line-clamp-3 mt-1"
-                      >
-                        Bupati Sumedang 2018-2023 Dony Ahmad Munir...
-                      </p>
-                    </div>
-                  </div>
-                </a>
-                <!-- card kedua -->
               </div>
             </div>
           </div>
@@ -265,119 +283,157 @@
             </div>
 
             <div class="space-y-12">
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              <div
+                class="mx-auto mt-12 grid gap-6 lg:max-w-none lg:grid-cols-2"
+              >
+                <a href="d-blog2.html">
+                  <div
+                    class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl"
+                  >
+                    <div class="md:flex">
+                      <div class="md:shrink-0">
+                        <img
+                          alt=""
+                          class="h-48 w-full object-cover md:h-full md:w-48"
+                          src="assets/img/blog2.jpg"
+                        />
+                      </div>
+                      <div class="p-5 md:p-4">
+                        <p class="text-base space-x-2 mb-2">
+                          <span class="label">Informasi</span>
+                          <span class="text-base text-gray-600">19 Sep 24</span>
+                        </p>
+                        <p
+                          class="text-xl font-semibold text-gray-900 line-clamp-2"
+                        >
+                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
+                          Kabupaten
+                        </p>
+                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
+                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
+                          Dony Ahmad Munir mengalami perubahan yang cepat di
+                          berbagai bidang. Menjadi rujukan nasional, semakin
+                          dikenal dan meraih berbagai penghargaan atas inovasi
+                          dalam penyelenggaraan pemerintahan. Pemerintahan
+                          daerah, lembaga se-Indonesia berdatangan silih
+                          berganti untuk belajar kepada Sumedang dalam
+                          transformasi digital.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+
                 <a href="d-blog1.html">
                   <div
-                    class="card rounded-lg flex flex-col sm:flex-row gap-4 bg-white"
+                    class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
                   >
-                    <div
-                      class="flex w-full xl:w-[160px] xl:h-[160px] rounded overflow-hidden"
-                    >
-                      <img
-                        src="assets/img/blog1.jpg"
-                        alt="Image"
-                        class="h-60 w-auto object-cover"
-                      />
-                    </div>
-                    <div class="flex flex-col flex-1">
-                      <p class="text-base space-x-2">
-                        <span class="label">Informasi</span>
-                        <span class="text-base text-gray-600">19 Sep 24</span>
-                      </p>
-                      <h3
-                        class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
-                      >
-                        Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                        Kabupaten
-                      </h3>
-                      <p
-                        class="text-base text-gray-600 line-clamp-2 sm:line-clamp-3 mt-1"
-                      >
-                        Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony
-                        Ahmad Munir mengalami perubahan yang cepat di berbagai
-                        bidang. Menjadi rujukan nasional, semakin dikenal dan
-                        meraih berbagai penghargaan atas inovasi dalam
-                        penyelenggaraan pemerintahan. Pemerintahan daerah,
-                        lembaga se-Indonesia berdatangan silih berganti untuk
-                        belajar kepada Sumedang dalam transformasi digital.
-                      </p>
+                    <div class="md:flex">
+                      <div class="md:shrink-0">
+                        <img
+                          alt=""
+                          class="h-48 w-full object-cover md:h-full md:w-48"
+                          src="assets/img/blog1.jpg"
+                        />
+                      </div>
+                      <div class="p-5 md:p-4">
+                        <p class="text-base space-x-2 mb-2">
+                          <span class="label">Informasi</span>
+                          <span class="text-base text-gray-600">19 Sep 24</span>
+                        </p>
+                        <p
+                          class="text-xl font-semibold text-gray-900 line-clamp-2"
+                        >
+                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
+                          Kabupaten
+                        </p>
+                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
+                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
+                          Dony Ahmad Munir mengalami perubahan yang cepat di
+                          berbagai bidang. Menjadi rujukan nasional, semakin
+                          dikenal dan meraih berbagai penghargaan atas inovasi
+                          dalam penyelenggaraan pemerintahan. Pemerintahan
+                          daerah, lembaga se-Indonesia berdatangan silih
+                          berganti untuk belajar kepada Sumedang dalam
+                          transformasi digital.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </a>
 
                 <a href="d-blog2.html">
                   <div
-                    class="card rounded-lg flex flex-col sm:flex-row gap-4 bg-white"
+                    class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl"
                   >
-                    <div
-                      class="flex w-full xl:w-[160px] xl:h-[160px] rounded overflow-hidden"
-                    >
-                      <img
-                        src="assets/img/blog2.jpg"
-                        alt="Image"
-                        class="h-60 w-auto object-cover"
-                      />
-                    </div>
-                    <div class="flex flex-col flex-1">
-                      <p class="text-base space-x-2">
-                        <span class="label">Informasi</span>
-                        <span class="text-base text-gray-600">19 Sep 24</span>
-                      </p>
-                      <h3
-                        class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
-                      >
-                        Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                        Kabupaten
-                      </h3>
-                      <p
-                        class="text-base text-gray-600 line-clamp-2 sm:line-clamp-3 mt-1"
-                      >
-                        Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony
-                        Ahmad Munir mengalami perubahan yang cepat di berbagai
-                        bidang. Menjadi rujukan nasional, semakin dikenal dan
-                        meraih berbagai penghargaan atas inovasi dalam
-                        penyelenggaraan pemerintahan. Pemerintahan daerah,
-                        lembaga se-Indonesia berdatangan silih berganti untuk
-                        belajar kepada Sumedang dalam transformasi digital.
-                      </p>
+                    <div class="md:flex">
+                      <div class="md:shrink-0">
+                        <img
+                          alt=""
+                          class="h-48 w-full object-cover md:h-full md:w-48"
+                          src="assets/img/blog2.jpg"
+                        />
+                      </div>
+                      <div class="p-5 md:p-4">
+                        <p class="text-base space-x-2 mb-2">
+                          <span class="label">Informasi</span>
+                          <span class="text-base text-gray-600">19 Sep 24</span>
+                        </p>
+                        <p
+                          class="text-xl font-semibold text-gray-900 line-clamp-2"
+                        >
+                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
+                          Kabupaten
+                        </p>
+                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
+                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
+                          Dony Ahmad Munir mengalami perubahan yang cepat di
+                          berbagai bidang. Menjadi rujukan nasional, semakin
+                          dikenal dan meraih berbagai penghargaan atas inovasi
+                          dalam penyelenggaraan pemerintahan. Pemerintahan
+                          daerah, lembaga se-Indonesia berdatangan silih
+                          berganti untuk belajar kepada Sumedang dalam
+                          transformasi digital.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </a>
-                <a href="d-blog2.html">
+
+                <a href="d-blog1.html">
                   <div
-                    class="card rounded-lg flex flex-col sm:flex-row gap-4 bg-white"
+                    class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
                   >
-                    <div
-                      class="flex w-full xl:w-[160px] xl:h-[160px] rounded overflow-hidden"
-                    >
-                      <img
-                        src="assets/img/blog2.jpg"
-                        alt="Image"
-                        class="h-60 w-auto object-cover"
-                      />
-                    </div>
-                    <div class="flex flex-col flex-1">
-                      <p class="text-base space-x-2">
-                        <span class="label">Informasi</span>
-                        <span class="text-base text-gray-600">19 Sep 24</span>
-                      </p>
-                      <h3
-                        class="text-xl text-gray-800 font-semibold line-clamp-2 mt-4"
-                      >
-                        Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                        Kabupaten
-                      </h3>
-                      <p
-                        class="text-base text-gray-600 line-clamp-2 sm:line-clamp-3 mt-1"
-                      >
-                        Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati Dony
-                        Ahmad Munir mengalami perubahan yang cepat di berbagai
-                        bidang. Menjadi rujukan nasional, semakin dikenal dan
-                        meraih berbagai penghargaan atas inovasi dalam
-                        penyelenggaraan pemerintahan. Pemerintahan daerah,
-                        lembaga se-Indonesia berdatangan silih berganti untuk
-                        belajar kepada Sumedang dalam transformasi digital.
-                      </p>
+                    <div class="md:flex">
+                      <div class="md:shrink-0">
+                        <img
+                          alt=""
+                          class="h-48 w-full object-cover md:h-full md:w-48"
+                          src="assets/img/blog1.jpg"
+                        />
+                      </div>
+                      <div class="p-5 md:p-4">
+                        <p class="text-base space-x-2 mb-2">
+                          <span class="label">Informasi</span>
+                          <span class="text-base text-gray-600">19 Sep 24</span>
+                        </p>
+                        <p
+                          class="text-xl font-semibold text-gray-900 line-clamp-2"
+                        >
+                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
+                          Kabupaten
+                        </p>
+                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
+                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
+                          Dony Ahmad Munir mengalami perubahan yang cepat di
+                          berbagai bidang. Menjadi rujukan nasional, semakin
+                          dikenal dan meraih berbagai penghargaan atas inovasi
+                          dalam penyelenggaraan pemerintahan. Pemerintahan
+                          daerah, lembaga se-Indonesia berdatangan silih
+                          berganti untuk belajar kepada Sumedang dalam
+                          transformasi digital.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </a>
@@ -561,6 +617,7 @@
 
       <p class="text-center mt-2 text-black text-sm">©2024 DonyFajar</p>
     </footer>
+
     <!-- Navbar -->
     <script>
       const cloSebanner = document.getElementById("close-banner");
