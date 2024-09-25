@@ -924,6 +924,14 @@ html {
   margin-top: 2rem;
 }
 
+.-mt-40 {
+  margin-top: -10rem;
+}
+
+.-mt-9 {
+  margin-top: -2.25rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -1167,6 +1175,14 @@ html {
   width: 100vw;
 }
 
+.w-\[500px\] {
+  width: 500px;
+}
+
+.w-\[900px\] {
+  width: 900px;
+}
+
 .min-w-\[100px\] {
   min-width: 100px;
 }
@@ -1221,6 +1237,10 @@ html {
 
 .max-w-screen-md {
   max-width: 768px;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .flex-1 {
@@ -2809,6 +2829,60 @@ html {
   line-height: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.text-\[10vh\] {
+  font-size: 10vh;
+}
+
+.text-\[10vw\] {
+  font-size: 10vw;
+}
+
+.text-\[100vw\] {
+  font-size: 100vw;
+}
+
+.text-\[50vw\] {
+  font-size: 50vw;
+}
+
+.text-\[20vw\] {
+  font-size: 20vw;
+}
+
+.text-\[30vw\] {
+  font-size: 30vw;
+}
+
+.text-\[23vw\] {
+  font-size: 23vw;
+}
+
+.text-\[25vw\] {
+  font-size: 25vw;
+}
+
+.text-\[24vw\] {
+  font-size: 24vw;
+}
+
+.text-\[16vw\] {
+  font-size: 16vw;
+}
+
+.text-\[14vw\] {
+  font-size: 14vw;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -3634,6 +3708,14 @@ html {
     top: -20rem;
   }
 
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .sm\:-mt-44 {
+    margin-top: -11rem;
+  }
+
   .sm\:line-clamp-3 {
     overflow: hidden;
     display: -webkit-box;
@@ -3724,6 +3806,11 @@ html {
     font-size: 38px;
   }
 
+  .sm\:text-8xl {
+    font-size: 6rem;
+    line-height: 1;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3750,6 +3837,10 @@ html {
     margin-top: 0px;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -3768,6 +3859,18 @@ html {
 
   .md\:min-w-\[140px\] {
     min-width: 140px;
+  }
+
+  .md\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .md\:max-w-xl {
+    max-width: 36rem;
+  }
+
+  .md\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .md\:grid-cols-2 {
@@ -3815,6 +3918,14 @@ html {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+
+  .md\:text-\[120px\] {
+    font-size: 120px;
+  }
+
+  .md\:text-\[14vw\] {
+    font-size: 14vw;
   }
 }
 
