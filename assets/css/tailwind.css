@@ -16,10 +16,10 @@
   }
 
   .tab {
-    @apply px-5 py-3 rounded-md bg-gray-100 text-gray-800;
+    @apply px-5 py-3 rounded-md bg-gray-100 text-gray-800 inline-flex;
   }
   .tab-active {
-    @apply px-5 py-3 rounded-md bg-light-blue-400 text-gray-800;
+    @apply px-5 py-3 rounded-md bg-light-blue-400 text-gray-800 inline-flex;
   }
   .active {
     @apply font-bold  text-dark-blue-500 !important;
