@@ -74,4 +74,17 @@
     -ms-overflow-style: none; /* Menyembunyikan scrollbar pada Internet Explorer dan Edge Legacy */
     scrollbar-width: none; /* Menyembunyikan scrollbar pada Firefox */
   }
+   @keyframes rotate-slow {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .animate-rotate-slow {
+      animation: rotate-slow 15s linear infinite;
+    }
 }

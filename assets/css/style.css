@@ -872,6 +872,10 @@ html {
   margin-top: -11rem;
 }
 
+.-mt-9 {
+  margin-top: -2.25rem;
+}
+
 .-mt-px {
   margin-top: -1px;
 }
@@ -922,38 +926,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-mr-6 {
-  margin-right: -1.5rem;
-}
-
-.-ml-6 {
-  margin-left: -1.5rem;
-}
-
-.-ml-10 {
-  margin-left: -2.5rem;
-}
-
-.-ml-12 {
-  margin-left: -3rem;
-}
-
-.-ml-14 {
-  margin-left: -3.5rem;
-}
-
-.-ml-20 {
-  margin-left: -5rem;
-}
-
-.-ml-60 {
-  margin-left: -15rem;
-}
-
-.-ml-64 {
-  margin-left: -16rem;
 }
 
 .box-border {
@@ -1073,6 +1045,10 @@ html {
   height: 0.25rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-2 {
   height: 0.5rem;
 }
@@ -1091,6 +1067,10 @@ html {
 
 .h-\[21\.1875rem\] {
   height: 21.1875rem;
+}
+
+.h-\[32rem\] {
+  height: 32rem;
 }
 
 .h-\[480px\] {
@@ -1112,26 +1092,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-16 {
-  height: 4rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .min-h-\[99px\] {
@@ -1166,8 +1126,16 @@ html {
   width: 1.5rem;
 }
 
+.w-\[137px\] {
+  width: 137px;
+}
+
 .w-\[340px\] {
   width: 340px;
+}
+
+.w-\[365px\] {
+  width: 365px;
 }
 
 .w-\[40px\] {
@@ -1201,14 +1169,6 @@ html {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[365px\] {
-  width: 365px;
-}
-
-.w-\[137px\] {
-  width: 137px;
 }
 
 .min-w-\[100px\] {
@@ -1265,6 +1225,10 @@ html {
 
 .max-w-screen-md {
   max-width: 768px;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .flex-1 {
@@ -2383,6 +2347,11 @@ html {
   border-color: rgb(43 54 136 / var(--tw-border-opacity));
 }
 
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -2800,6 +2769,10 @@ html {
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
+}
+
+.text-\[14vw\] {
+  font-size: 14vw;
 }
 
 .text-base {
@@ -3570,6 +3543,20 @@ html {
   /* Menyembunyikan scrollbar pada Firefox */
 }
 
+@keyframes rotate-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 15s linear infinite;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3652,6 +3639,10 @@ html {
     top: -20rem;
   }
 
+  .sm\:-mt-44 {
+    margin-top: -11rem;
+  }
+
   .sm\:line-clamp-3 {
     overflow: hidden;
     display: -webkit-box;
@@ -3677,6 +3668,10 @@ html {
 
   .sm\:h-\[42\.375rem\] {
     height: 42.375rem;
+  }
+
+  .sm\:h-\[60rem\] {
+    height: 60rem;
   }
 
   .sm\:max-h-\[350px\] {
@@ -3744,6 +3739,10 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:-ml-36 {
+    margin-left: -9rem;
+  }
+
   .md\:-mt-px {
     margin-top: -1px;
   }
@@ -3752,20 +3751,16 @@ html {
     margin-bottom: 0px;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:ml-3 {
     margin-left: 0.75rem;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:-ml-40 {
-    margin-left: -10rem;
-  }
-
-  .md\:-ml-36 {
-    margin-left: -9rem;
   }
 
   .md\:flex {
@@ -3786,6 +3781,10 @@ html {
 
   .md\:min-w-\[140px\] {
     min-width: 140px;
+  }
+
+  .md\:max-w-3xl {
+    max-width: 48rem;
   }
 
   .md\:grid-cols-2 {
@@ -3826,6 +3825,10 @@ html {
     line-height: 2rem;
   }
 
+  .md\:text-\[14vw\] {
+    font-size: 14vw;
+  }
+
   .md\:text-\[180px\] {
     font-size: 180px;
   }
@@ -3849,12 +3852,8 @@ html {
     margin-top: 0px;
   }
 
-  .lg\:max-w-screen-sm {
-    max-width: 640px;
-  }
-
-  .lg\:max-w-xl {
-    max-width: 36rem;
+  .lg\:max-w-lg {
+    max-width: 32rem;
   }
 
   .lg\:grid-cols-3 {
@@ -3873,10 +3872,6 @@ html {
 }
 
 @media (min-width: 1280px) {
-  .xl\:-mt-44 {
-    margin-top: -11rem;
-  }
-
   .xl\:-ml-64 {
     margin-left: -16rem;
   }
@@ -3932,16 +3927,12 @@ html {
     margin-bottom: -3rem;
   }
 
-  .\32xl\:-mt-44 {
-    margin-top: -11rem;
-  }
-
-  .\32xl\:-ml-80 {
-    margin-left: -20rem;
-  }
-
   .\32xl\:-ml-96 {
     margin-left: -24rem;
+  }
+
+  .\32xl\:-mt-44 {
+    margin-top: -11rem;
   }
 
   .\32xl\:w-2\/5 {
@@ -3950,10 +3941,6 @@ html {
 
   .\32xl\:max-w-screen-lg {
     max-width: 1024px;
-  }
-
-  .\32xl\:scroll-ml-96 {
-    scroll-margin-left: 24rem;
   }
 
   .\32xl\:gap-20 {

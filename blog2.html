@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <nav class="fixed top-0 z-50 w-screen bg-white sh-4 flex flex-col" id="nav">
+    <nav class="fixed top-0 z-20 w-screen bg-white sh-4 flex flex-col" id="nav">
       <div
         id="banner"
         class="bg-light-blue-500 flex p-2 justify-center items-center relative"
@@ -117,14 +117,10 @@
         </div>
       </div>
       <div
-        class="hidden md:flex md:items-center md:space-x-4 md:-ml-36 xl:-ml-64 2xl:-ml-96"
+        class="hidden px-4 py-4 border-y-1 flex border-gray-200 space-y-2 items-center flex-col md:hidden md:items-center"
+        id="menu"
       >
-        <a
-          href="index.html#hero"
-          class="btn-text menu active"
-          onclick="switchActiveMenu(this)"
-          >Beranda</a
-        >
+        <a href="index.html#hero" class="btn-text menu">Beranda</a>
         <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
         <a href="index.html#kontribusi" class="btn-text menu">Kontribusi</a>
         <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>
@@ -286,249 +282,10 @@
               <a href="" class="tab">Hoax</a>
             </div>
 
-            <div class="space-y-12">
-              <div
-                class="mx-auto mt-12 grid gap-6 lg:max-w-none lg:grid-cols-2"
-              >
-                <a href="d-blog2.html">
-                  <div
-                    class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl"
-                  >
-                    <div class="md:flex">
-                      <div class="md:shrink-0">
-                        <img
-                          alt=""
-                          class="h-48 w-full object-cover md:h-full md:w-48"
-                          src="assets/img/blog2.jpg"
-                        />
-                      </div>
-                      <div class="p-5 md:p-4">
-                        <p class="text-base space-x-2 mb-2">
-                          <span class="label">Informasi</span>
-                          <span class="text-base text-gray-600">19 Sep 24</span>
-                        </p>
-                        <p
-                          class="text-xl font-semibold text-gray-900 line-clamp-2"
-                        >
-                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                          Kabupaten
-                        </p>
-                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
-                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
-                          Dony Ahmad Munir mengalami perubahan yang cepat di
-                          berbagai bidang. Menjadi rujukan nasional, semakin
-                          dikenal dan meraih berbagai penghargaan atas inovasi
-                          dalam penyelenggaraan pemerintahan. Pemerintahan
-                          daerah, lembaga se-Indonesia berdatangan silih
-                          berganti untuk belajar kepada Sumedang dalam
-                          transformasi digital.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="d-blog1.html">
-                  <div
-                    class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
-                  >
-                    <div class="md:flex">
-                      <div class="md:shrink-0">
-                        <img
-                          alt=""
-                          class="h-48 w-full object-cover md:h-full md:w-48"
-                          src="assets/img/blog1.jpg"
-                        />
-                      </div>
-                      <div class="p-5 md:p-4">
-                        <p class="text-base space-x-2 mb-2">
-                          <span class="label">Informasi</span>
-                          <span class="text-base text-gray-600">19 Sep 24</span>
-                        </p>
-                        <p
-                          class="text-xl font-semibold text-gray-900 line-clamp-2"
-                        >
-                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                          Kabupaten
-                        </p>
-                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
-                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
-                          Dony Ahmad Munir mengalami perubahan yang cepat di
-                          berbagai bidang. Menjadi rujukan nasional, semakin
-                          dikenal dan meraih berbagai penghargaan atas inovasi
-                          dalam penyelenggaraan pemerintahan. Pemerintahan
-                          daerah, lembaga se-Indonesia berdatangan silih
-                          berganti untuk belajar kepada Sumedang dalam
-                          transformasi digital.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="d-blog2.html">
-                  <div
-                    class="max-w-md mx-auto bg-white rounded-lg shadow-md overflow-hidden md:max-w-2xl"
-                  >
-                    <div class="md:flex">
-                      <div class="md:shrink-0">
-                        <img
-                          alt=""
-                          class="h-48 w-full object-cover md:h-full md:w-48"
-                          src="assets/img/blog2.jpg"
-                        />
-                      </div>
-                      <div class="p-5 md:p-4">
-                        <p class="text-base space-x-2 mb-2">
-                          <span class="label">Informasi</span>
-                          <span class="text-base text-gray-600">19 Sep 24</span>
-                        </p>
-                        <p
-                          class="text-xl font-semibold text-gray-900 line-clamp-2"
-                        >
-                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                          Kabupaten
-                        </p>
-                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
-                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
-                          Dony Ahmad Munir mengalami perubahan yang cepat di
-                          berbagai bidang. Menjadi rujukan nasional, semakin
-                          dikenal dan meraih berbagai penghargaan atas inovasi
-                          dalam penyelenggaraan pemerintahan. Pemerintahan
-                          daerah, lembaga se-Indonesia berdatangan silih
-                          berganti untuk belajar kepada Sumedang dalam
-                          transformasi digital.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-
-                <a href="d-blog1.html">
-                  <div
-                    class="max-w-md mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
-                  >
-                    <div class="md:flex">
-                      <div class="md:shrink-0">
-                        <img
-                          alt=""
-                          class="h-48 w-full object-cover md:h-full md:w-48"
-                          src="assets/img/blog1.jpg"
-                        />
-                      </div>
-                      <div class="p-5 md:p-4">
-                        <p class="text-base space-x-2 mb-2">
-                          <span class="label">Informasi</span>
-                          <span class="text-base text-gray-600">19 Sep 24</span>
-                        </p>
-                        <p
-                          class="text-xl font-semibold text-gray-900 line-clamp-2"
-                        >
-                          Melanjutkan Kebaikan untuk Sumedang Semakin Maju
-                          Kabupaten
-                        </p>
-                        <p class="mt-3 text-base text-gray-500 line-clamp-3">
-                          Sumedang selama 5 tahun, 2028-2023, dipimpin Bupati
-                          Dony Ahmad Munir mengalami perubahan yang cepat di
-                          berbagai bidang. Menjadi rujukan nasional, semakin
-                          dikenal dan meraih berbagai penghargaan atas inovasi
-                          dalam penyelenggaraan pemerintahan. Pemerintahan
-                          daerah, lembaga se-Indonesia berdatangan silih
-                          berganti untuk belajar kepada Sumedang dalam
-                          transformasi digital.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
+            <div class="space-y-">
+              <div class="t">
+                <h1 class="">Ooops... tidak ditemukan</h1>
               </div>
-
-              <nav
-                class="flex items-center justify-between border-t border-gray-200 px-4 sm:px-0"
-              >
-                <div class="-mt-px flex w-0 flex-1">
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-transparent pt-4 pr-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    <!-- Heroicon name: mini/arrow-long-left -->
-                    <svg
-                      class="mr-3 h-5 w-5 text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M18 10a.75.75 0 01-.75.75H4.66l2.1 1.95a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 111.02 1.1l-2.1 1.95h12.59A.75.75 0 0118 10z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                    Previous
-                  </a>
-                </div>
-                <div class="hidden md:-mt-px md:flex">
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                    >1</a
-                  >
-                  <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-dark-blue-500 px-4 pt-4 text-sm font-medium text-dark-blue-600"
-                    aria-current="page"
-                    >2</a
-                  >
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                    >3</a
-                  >
-                  <span
-                    class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500"
-                    >...</span
-                  >
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                    >8</a
-                  >
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                    >9</a
-                  >
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-transparent px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                    >10</a
-                  >
-                </div>
-                <div class="-mt-px flex w-0 flex-1 justify-end">
-                  <a
-                    href="#"
-                    class="inline-flex items-center border-t-2 border-transparent pt-4 pl-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                  >
-                    Next
-                    <!-- Heroicon name: mini/arrow-long-right -->
-                    <svg
-                      class="ml-3 h-5 w-5 text-gray-400"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 10a.75.75 0 01.75-.75h12.59l-2.1-1.95a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.1-1.95H2.75A.75.75 0 012 10z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
-                </div>
-              </nav>
             </div>
           </div>
           <!-- box kedua -->
