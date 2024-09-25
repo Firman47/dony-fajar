@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="fixed top-0 z-20 w-screen bg-white sh-4 flex flex-col" id="nav">
+    <nav class="fixed top-0 z-50 w-screen bg-white sh-4 flex flex-col" id="nav">
         <div id="banner" class="bg-light-blue-500 flex p-2 justify-center items-center relative">
             <div class="flex flex-col md:flex-row items-center justify-cente gap-2">
                 <div class="flex  justify-center items-center gap-1">
@@ -46,15 +46,16 @@
                 </svg>
             </button>
         </div>
-        <div class="px-4 py-4  md:px-[24px] lg:px-[120px] flex justify-between items-center">
-            <div class="flex gap-3">
-                <!-- Brand (Logo) -->
-                <a class="items-center" href="/index.html">
-                    <div class="flex items-center gap-2">
-                        <img src="assets/img/logo.png" alt="" srcset="">
-                    </div>
-                </a>
-            </div>
+        <div class="px-4 py-4  md:px-[24px] lg:px-[120px] flex justify-between items-center border-b border-gray-100">
+
+            <!-- Brand (Logo) -->
+            <a class="items-center" href="/index.html">
+                <div class="flex w-[137px]">
+                    <img src="assets/img/logo.png" class="w-auto h-12 md:h-16" alt="logo dony fajar" loading="lazy">
+                </div>
+
+            </a>
+
             <div class="flex gap-3">
                 <div class="md:hidden flex gap-3">
                     <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
@@ -70,20 +71,20 @@
                 </button>
 
             </div>
-            <div class="hidden md:flex md:items-center md:space-x-4">
-                <a href="index.html#hero" class="btn-text menu ">Beranda</a>
+            <div class="hidden md:flex md:items-center md:space-x-4 md:-ml-36 xl:-ml-64 2xl:-ml-96">
+                <a href="index.html#hero" class="btn-text menu active" onclick="switchActiveMenu(this)">Beranda</a>
                 <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
                 <a href="index.html#kontribusi" class="btn-text menu">Kontribusi</a>
                 <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>
                 <a href="blog.html" class="btn-text menu ">Blog</a>
             </div>
-            <div class="hidden md:flex md:items-center md:ml-3">
+            <div class="hidden md:flex md:items-center w-[137px]">
                 <a href="agenda.html" rel="noopener noreferrer" class="button-outline ">Lihat Agenda</a>
             </div>
         </div>
         <div class="hidden px-4 py-4 border-y-1  flex border-gray-200 space-y-2  items-center flex-col md:hidden md:items-center"
             id="menu">
-            <a href="index.html#hero" class="btn-text menu ">Beranda</a>
+            <a href="index.html#hero" class="btn-text menu active" onclick="switchActiveMenu(this)">Beranda</a>
             <a href="index.html#visi-misi" class="btn-text menu">Visi Misi</a>
             <a href="index.html#kontribusi" class="btn-text menu">Kontribusi</a>
             <a href="index.html#assets" class="btn-text menu">Aset Kampanye</a>

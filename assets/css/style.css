@@ -872,6 +872,10 @@ html {
   margin-top: -11rem;
 }
 
+.-mt-9 {
+  margin-top: -2.25rem;
+}
+
 .-mt-px {
   margin-top: -1px;
 }
@@ -922,14 +926,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-mt-40 {
-  margin-top: -10rem;
-}
-
-.-mt-9 {
-  margin-top: -2.25rem;
 }
 
 .box-border {
@@ -1073,6 +1069,10 @@ html {
   height: 21.1875rem;
 }
 
+.h-\[32rem\] {
+  height: 32rem;
+}
+
 .h-\[480px\] {
   height: 480px;
 }
@@ -1092,10 +1092,6 @@ html {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[32rem\] {
-  height: 32rem;
 }
 
 .min-h-\[99px\] {
@@ -1173,14 +1169,6 @@ html {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[500px\] {
-  width: 500px;
-}
-
-.w-\[900px\] {
-  width: 900px;
 }
 
 .min-w-\[100px\] {
@@ -1330,22 +1318,6 @@ html {
 
 .animate-ping {
   animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8,0,1,1);
-  }
-
-  50% {
-    transform: none;
-    animation-timing-function: cubic-bezier(0,0,0.2,1);
-  }
-}
-
-.animate-bounce {
-  animation: bounce 1s infinite;
 }
 
 .touch-auto {
@@ -2385,11 +2357,6 @@ html {
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
-.border-gray-50 {
-  --tw-border-opacity: 1;
-  border-color: rgb(249 250 251 / var(--tw-border-opacity));
-}
-
 .border-gray-500 {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
@@ -2804,6 +2771,10 @@ html {
   line-height: 1;
 }
 
+.text-\[14vw\] {
+  font-size: 14vw;
+}
+
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -2827,60 +2798,6 @@ html {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-\[10vh\] {
-  font-size: 10vh;
-}
-
-.text-\[10vw\] {
-  font-size: 10vw;
-}
-
-.text-\[100vw\] {
-  font-size: 100vw;
-}
-
-.text-\[50vw\] {
-  font-size: 50vw;
-}
-
-.text-\[20vw\] {
-  font-size: 20vw;
-}
-
-.text-\[30vw\] {
-  font-size: 30vw;
-}
-
-.text-\[23vw\] {
-  font-size: 23vw;
-}
-
-.text-\[25vw\] {
-  font-size: 25vw;
-}
-
-.text-\[24vw\] {
-  font-size: 24vw;
-}
-
-.text-\[16vw\] {
-  font-size: 16vw;
-}
-
-.text-\[14vw\] {
-  font-size: 14vw;
 }
 
 .font-bold {
@@ -3626,6 +3543,20 @@ html {
   /* Menyembunyikan scrollbar pada Firefox */
 }
 
+@keyframes rotate-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-slow {
+  animation: rotate-slow 15s linear infinite;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3706,10 +3637,6 @@ html {
 
   .sm\:top-\[-20rem\] {
     top: -20rem;
-  }
-
-  .sm\:mb-4 {
-    margin-bottom: 1rem;
   }
 
   .sm\:-mt-44 {
@@ -3806,11 +3733,6 @@ html {
     font-size: 38px;
   }
 
-  .sm\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -3829,16 +3751,16 @@ html {
     margin-bottom: 0px;
   }
 
+  .md\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
   .md\:ml-3 {
     margin-left: 0.75rem;
   }
 
   .md\:mt-0 {
     margin-top: 0px;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
   }
 
   .md\:flex {
@@ -3859,14 +3781,6 @@ html {
 
   .md\:min-w-\[140px\] {
     min-width: 140px;
-  }
-
-  .md\:max-w-lg {
-    max-width: 32rem;
-  }
-
-  .md\:max-w-xl {
-    max-width: 36rem;
   }
 
   .md\:max-w-3xl {
@@ -3911,6 +3825,10 @@ html {
     line-height: 2rem;
   }
 
+  .md\:text-\[14vw\] {
+    font-size: 14vw;
+  }
+
   .md\:text-\[180px\] {
     font-size: 180px;
   }
@@ -3918,14 +3836,6 @@ html {
   .md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
-  }
-
-  .md\:text-\[120px\] {
-    font-size: 120px;
-  }
-
-  .md\:text-\[14vw\] {
-    font-size: 14vw;
   }
 }
 
@@ -3940,10 +3850,6 @@ html {
 
   .lg\:mt-0 {
     margin-top: 0px;
-  }
-
-  .lg\:max-w-xl {
-    max-width: 36rem;
   }
 
   .lg\:max-w-lg {
